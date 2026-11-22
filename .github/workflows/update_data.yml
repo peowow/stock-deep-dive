@@ -1,0 +1,44 @@
+name: Update Deep Dive Stock Data
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "tickers.txt"
+      - "fetch_data.py"
+      - ".github/workflows/update_data.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install --upgrade yfinance requests beautifulsoup4
+
+      - name: Fetch stock and benchmark data
+        run: python fetch_data.py
+
+      - name: Commit updated data.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/data.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update deep dive data.json"
+            git push
+          fi
