@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Deep Dive — Financial Trends &amp; Valuation</title>
+  <style>
+    :root {
+      --bg: #221811;
+      --surface: #2d2017;
+      --surface-2: #3d2c20;
+      --surface-3: #4f3a2b;
+      --border: #4a3628;
+      --accent: #d97706;
+      --accent-hover: #b45309;
+      --text: #f7efe8;
+      --muted: #bda899;
+      --green: #4ade80;
+      --red: #f87171;
+      --c1: #d97706;
+      --c2: #38bdf8;
+      --c3: #c084fc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.45;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 18px 24px;
+    }
+
+    header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 20px;
+      margin-bottom: 18px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+    }
+
+    .brand p {
+      margin: 2px 0 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .sync-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.83rem;
+      color: var(--muted);
+    }
+
+    button, input {
+      font-family: inherit;
+      font-size: 0.88rem;
+    }
+
+    .btn {
+      background: var(--surface-2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 7px 12px;
+      cursor: pointer;
+      transition: background 0.15s ease, border-color 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn:hover { background: var(--surface-3); }
+    .btn:disabled { opacity: 0.55; cursor: not-allowed; }
+
+    .btn-primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+
+    .btn-sm { padding: 5px 10px; font-size: 0.8rem; }
+
+    .btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .token-panel {
+      display: none;
+      margin-top: 12px;
+      padding: 12px 14px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.82rem;
+    }
+
+    .token-panel.open { display: block; }
+
+    .token-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .picker-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .picker-left {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 5px 13px;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 0.88rem;
+    }
+
+    .pill-price { color: var(--accent); font-weight: 700; font-size: 0.85rem; }
+    .pill-ind { color: var(--muted); font-weight: 400; font-size: 0.77rem; }
+
+    .pill-link {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.76rem;
+      font-weight: 500;
+      border-left: 1px solid var(--border);
+      padding-left: 7px;
+    }
+
+    .pill-link:hover { color: #ffffff; text-decoration: underline; }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .pill button {
+      background: none;
+      border: none;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 0 2px;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .pill button:hover { color: var(--red); }
+
+    .add-box, .new-ticker-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+    }
+
+    .input-field {
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 7px 11px;
+    }
+
+    .input-field:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    .dropdown-list {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 280px;
+      margin-top: 4px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      max-height: 260px;
+      overflow-y: auto;
+      z-index: 40;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+      display: none;
+    }
+
+    .dropdown-list.open { display: block; }
+
+    .dropdown-item {
+      padding: 8px 12px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.85rem;
+      border-bottom: 1px solid rgba(74, 54, 40, 0.45);
+    }
+
+    .dropdown-item:last-child { border-bottom: none; }
+    .dropdown-item:hover { background: var(--surface-3); }
+    .dropdown-item strong { color: #ffffff; }
+    .dropdown-item span { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+    .module {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      margin-bottom: 18px;
+      min-width: 0;
+    }
+
+    .module-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .module-title { margin: 0; font-size: 1.1rem; color: #ffffff; }
+    .module-sub { margin: 3px 0 0; font-size: 0.82rem; color: var(--muted); }
+
+    .btn-group { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .legend-item { display: inline-flex; align-items: center; gap: 6px; }
+
+    .svg-wrap { width: 100%; position: relative; }
+    svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+    .bar-hover { cursor: pointer; transition: opacity 0.12s ease; }
+    .bar-hover:hover { opacity: 0.85; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .two-col .module { margin-bottom: 0; }
+
+    .pos { color: var(--green); font-weight: 700; }
+    .neg { color: var(--red); font-weight: 700; }
+    .amb { color: var(--accent); font-weight: 700; }
+
+    .section-divider-title {
+      margin: 22px 0 4px;
+      font-size: 0.96rem;
+      color: #ffffff;
+    }
+
+    .section-divider-sub {
+      margin: 0 0 8px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin-top: 8px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 9px 11px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      color: var(--muted);
+      font-weight: 600;
+      background: var(--surface-2);
+      white-space: nowrap;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    .row-group-start td { border-top: 2px solid var(--surface-3); }
+
+    .bench-row { margin-bottom: 14px; }
+    .bench-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.84rem;
+      margin-bottom: 5px;
+      gap: 8px;
+    }
+    .bench-label strong { color: #ffffff; }
+    .bench-label span { color: var(--muted); }
+
+    .bar-track {
+      width: 100%;
+      height: 10px;
+      background: var(--bg);
+      border-radius: 999px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .bar-fill { height: 100%; border-radius: 999px; }
+
+    .health-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .health-card {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 13px;
+    }
+
+    .health-card h4 {
+      margin: 0 0 10px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.96rem;
+    }
+
+    .meter-row { margin-bottom: 10px; font-size: 0.82rem; }
+    .meter-top { display: flex; justify-content: space-between; margin-bottom: 4px; gap: 8px; }
+
+    .status-banner {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 18px;
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 0.88rem;
+    }
+
+    .footnote { font-size: 0.77rem; color: var(--muted); margin-top: 10px; }
+
+    .tip-target {
+      cursor: help;
+      border-bottom: 1px dotted var(--muted);
+      display: inline-block;
+    }
+    .tip-target:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+    #floatingTip {
+      position: fixed;
+      z-index: 100;
+      max-width: 310px;
+      background: #1a120c;
+      color: var(--text);
+      border: 1px solid var(--accent);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 0.8rem;
+      line-height: 1.4;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.65);
+      pointer-events: none;
+      display: none;
+    }
+
+    #floatingTip .tip-title { font-weight: 700; color: #ffffff; margin-bottom: 4px; display: block; }
+    #floatingTip .tip-dir {
+      margin-top: 6px;
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      background: var(--surface-2);
+    }
+
+    .dir-high { color: var(--green); }
+    .dir-low { color: #38bdf8; }
+    .dir-mod { color: var(--accent); }
+
+    @media (max-width: 980px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div id="floatingTip"></div>
+
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <div class="brand">
+          <h1>STOCK DEEP DIVE</h1>
+          <p>Multi-Year Financials, Earnings Accuracy, Industry Benchmarks &amp; Solvency</p>
+        </div>
+        <div class="sync-bar">
+          <span id="updatedLabel">Loading market data...</span>
+          <button class="btn btn-sm" id="tokenToggleBtn" type="button">
+            <span class="dot" id="tokenStatusDot" style="background:var(--accent);"></span>
+            GitHub Token
+          </button>
+          <button class="btn btn-sm" id="triggerRunBtn" type="button" title="Run Python fetcher on GitHub to refresh all stocks">Run Data Refresh</button>
+          <button class="btn btn-sm" id="refreshBtn" type="button">Reload Page Data</button>
+        </div>
+      </div>
+
+      <div id="tokenPanel" class="token-panel">
+        <div style="color:var(--muted);">
+          Paste your GitHub Personal Access Token once to add new tickers right from this page. It saves <strong>only in your browser</strong> (never uploaded to GitHub).
+        </div>
+        <div class="token-grid">
+          <input type="password" id="ghTokenInput" class="input-field" style="width:260px;" placeholder="ghp_... or github_pat_..." />
+          <input type="text" id="ghOwnerInput" class="input-field" style="width:140px;" placeholder="GitHub username" />
+          <input type="text" id="ghRepoInput" class="input-field" style="width:160px;" placeholder="Repo (stock-deep-dive)" />
+          <button class="btn btn-sm btn-primary" id="saveTokenBtn" type="button">Save Token</button>
+          <button class="btn btn-sm" id="clearTokenBtn" type="button">Clear</button>
+        </div>
+      </div>
+
+      <div class="picker-row">
+        <div class="picker-left">
+          <div id="selectedPills" style="display:flex;flex-wrap:wrap;gap:8px;"></div>
+          <div class="add-box" id="addBox">
+            <input type="text" id="tickerSearch" class="input-field" style="width:220px;" placeholder="Compare saved stock (1–3)..." autocomplete="off" />
+            <div id="tickerDropdown" class="dropdown-list"></div>
+          </div>
+        </div>
+
+        <div class="new-ticker-box">
+          <input type="text" id="newTickerInput" class="input-field" style="width:170px;" placeholder="Fetch new ticker (e.g. AMZN)" autocomplete="off" />
+          <button class="btn btn-sm btn-primary" id="addNewTickerBtn" type="button">+ Fetch &amp; Add</button>
+        </div>
+      </div>
+    </header>
+
+    <div id="actionNotice" class="status-banner" style="display:none;"></div>
+    <div id="statusBanner" class="status-banner">Loading stock database...</div>
+
+    <div id="appContent" style="display:none;">
+      <!-- MODULE 1 -->
+      <section class="module">
+        <div class="module-head">
+          <div>
+            <h2 class="module-title">1. Multi-Year Financials, Consensus Expectations &amp; Future P/E</h2>
+            <p class="module-sub">Hover any metric label or chart bar for details and whether higher or lower is better</p>
+          </div>
+          <div class="btn-group" id="finMetricBtns">
+            <button class="btn btn-sm active" data-fin="revenue" data-metric="revenue" type="button">Revenue</button>
+            <button class="btn btn-sm" data-fin="earnings" data-metric="earnings" type="button">Earnings</button>
+            <button class="btn btn-sm" data-fin="eps" data-metric="eps" type="button">EPS</button>
+            <button class="btn btn-sm" data-fin="pe" data-metric="forwardPE" type="button">P/E (Trail vs. Future)</button>
+            <button class="btn btn-sm" data-fin="fcf" data-metric="fcf" type="button">Free Cash Flow</button>
+          </div>
+        </div>
+
+        <div id="finLegend" class="legend"></div>
+        <div class="svg-wrap" id="finChartWrap"></div>
+
+        <h3 class="section-divider-title">Multi-Year Historical Statements, Growth (CAGR) &amp; Consensus Forward Estimates</h3>
+        <p class="section-divider-sub">Actual annual fiscal reports alongside Current/Trailing figures and Yahoo Finance analyst consensus.</p>
+        <div id="multiYearTableWrap"></div>
+
+        <h3 class="section-divider-title">Last 4 Quarters: Actual vs. Estimated EPS</h3>
+        <p class="section-divider-sub">Recent quarterly earnings surprises from Yahoo Finance.</p>
+        <div id="earningsHistoryWrap"></div>
+
+        <p class="footnote">
+          * <strong>Forward Est.</strong> uses Yahoo consensus Revenue (<code>+1y</code>), consensus EPS (<code>forwardEps</code> / <code>+1y</code>), implied Forward Earnings (<code>Fwd EPS × Shares</code>), and <code>forwardPE</code>.
+        </p>
+      </section>
+
+      <!-- MODULE 2 & 3 -->
+      <div class="two-col">
+        <section class="module">
+          <div class="module-head">
+            <div>
+              <h2 class="module-title">2. Valuation &amp; Efficiency vs. Industry</h2>
+              <p class="module-sub" id="benchSub">Compared against NYU Stern (Damodaran) averages</p>
+            </div>
+          </div>
+          <div id="benchLegend" class="legend"></div>
+          <div id="benchWrap"></div>
+        </section>
+
+        <section class="module">
+          <div class="module-head">
+            <div>
+              <h2 class="module-title">3. Balance Sheet Health &amp; Cash Strength</h2>
+              <p class="module-sub">Cash vs. Debt, Liquidity, Interest Coverage &amp; Dividend Safety</p>
+            </div>
+          </div>
+          <div id="healthWrap" class="health-grid"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const COLORS = ["#d97706", "#38bdf8", "#c084fc"];
+
+      const METRIC_INFO = {
+        revenue: { title: "Annual Revenue", desc: "Total yearly sales from core business operations.", dir: "Better: Higher & steadily growing", cls: "dir-high" },
+        earnings: { title: "Earnings (Net Income)", desc: "Final net profit after operating expenses, interest, and taxes.", dir: "Better: Higher & growing consistently", cls: "dir-high" },
+        eps: { title: "Earnings Per Share (EPS)", desc: "Net profit divided by total shares.", dir: "Better: Higher", cls: "dir-high" },
+        fcf: { title: "Free Cash Flow (FCF)", desc: "Real cash left after operations and capital expenditures (equipment/buildings).", dir: "Better: Higher & positive", cls: "dir-high" },
+        latestActual: { title: "Current / Trailing (TTM)", desc: "Most recent trailing 12-month figure or current P/E ratio.", dir: "Compare against Forward Est. to see expected trajectory", cls: "dir-mod" },
+        cagr: { title: "Historical Annual Growth (CAGR)", desc: "Compound annual growth rate across the available annual statements.", dir: "Better: Higher", cls: "dir-high" },
+        fwdEst: { title: "Consensus Forward Estimate", desc: "Next-year analyst consensus for Revenue, EPS, Implied Earnings, and Future P/E.", dir: "Better: Higher Revenue/Earnings/EPS; Lower Future P/E", cls: "dir-mod" },
+        fwdChange: { title: "Est. vs. Actual Change (%)", desc: "Expected percentage change from Latest/Trailing to Forward Estimate.", dir: "Better: Positive for Revenue/Earnings/EPS; Negative for P/E", cls: "dir-mod" },
+        trailingPE: { title: "Trailing P/E Ratio", desc: "Share price divided by past 12 months' EPS.", dir: "Better: Lower (cheaper relative to recent profits)", cls: "dir-low" },
+        forwardPE: { title: "Future / Forward P/E Ratio", desc: "Share price divided by expected next-12-month EPS.", dir: "Better: Lower (cheaper relative to expected future earnings)", cls: "dir-low" },
+        priceToBook: { title: "Price / Book (P/B)", desc: "Share price compared to net asset value per share.", dir: "Better: Lower", cls: "dir-low" },
+        fcfYield: { title: "Free Cash Flow Yield", desc: "Free Cash Flow divided by Market Cap—cash yield on the stock's price.", dir: "Better: Higher", cls: "dir-high" },
+        operatingMargins: { title: "Operating Margin", desc: "Share of revenue kept as operating profit after core operating costs.", dir: "Better: Higher", cls: "dir-high" },
+        roic: { title: "Return on Invested Capital (ROIC)", desc: "After-tax operating profit (NOPAT) divided by Debt + Equity minus Cash.", dir: "Better: Higher (10%–15%+ is strong)", cls: "dir-high" },
+        roe: { title: "Return on Equity (ROE)", desc: "Net income divided by shareholders' equity.", dir: "Better: Higher (watch if artificially lifted by heavy debt)", cls: "dir-high" },
+        roa: { title: "Return on Assets (ROA)", desc: "Net income divided by total assets.", dir: "Better: Higher", cls: "dir-high" },
+        debtToEquity: { title: "Debt / Equity Ratio", desc: "Total debt divided by shareholders' equity.", dir: "Better: Lower", cls: "dir-low" },
+        totalCash: { title: "Total Cash", desc: "Cash and short-term investments on the balance sheet.", dir: "Better: Higher", cls: "dir-high" },
+        totalDebt: { title: "Total Debt", desc: "Total short-term and long-term borrowed debt.", dir: "Better: Lower", cls: "dir-low" },
+        netCash: { title: "Net Cash Position", desc: "Total Cash minus Total Debt.", dir: "Better: Higher (positive means cash exceeds all debt)", cls: "dir-high" },
+        quickRatio: { title: "Quick Ratio", desc: "Liquid cash + receivables divided by bills due within 1 year.", dir: "Better: Higher (1.0x+ is healthy)", cls: "dir-high" },
+        debtToEbitda: { title: "Debt / EBITDA", desc: "Total Debt divided by EBITDA (rough years of operating cash earnings to pay off debt).", dir: "Better: Lower (under 2.5x is comfortable)", cls: "dir-low" },
+        interestCoverage: { title: "Interest Coverage Ratio", desc: "Operating Profit (EBIT) divided by annual Interest Expense.", dir: "Better: Higher (5x+ is very safe; under 1.5x is risky)", cls: "dir-high" },
+        profitMargins: { title: "Net Profit Margin", desc: "Final percentage of sales kept as bottom-line profit.", dir: "Better: Higher", cls: "dir-high" },
+        divYield: { title: "Dividend Yield", desc: "Annual dividend per share divided by share price.", dir: "Better: Moderate-to-Higher (check payout safety)", cls: "dir-mod" },
+        payoutRatio: { title: "Dividend Payout Ratio", desc: "Share of earnings paid out as dividends.", dir: "Better: Lower / Moderate (under 60% is safer)", cls: "dir-low" }
+      };
+
+      const $ = (id) => document.getElementById(id);
+
+      function storageGet(key, fallback) {
+        try {
+          const raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : fallback;
+        } catch (_) {
+          return fallback;
+        }
+      }
+
+      function storageSet(key, val) {
+        try { localStorage.setItem(key, JSON.stringify(val)); } catch (_) {}
+      }
+
+      function detectRepoFromUrl() {
+        let owner = "";
+        let repo = "stock-deep-dive";
+        if (window.location.hostname.endsWith(".github.io")) {
+          owner = window.location.hostname.replace(".github.io", "");
+          const parts = window.location.pathname.split("/").filter(Boolean);
+          if (parts.length > 0) repo = parts[0];
+        }
+        return { owner, repo };
+      }
+
+      const detected = detectRepoFromUrl();
+      const state = {
+        raw: null,
+        tickers: {},
+        searchIndex: [],
+        benchmarks: {},
+        benchIsPercent: {},
+        normalizedCache: Object.create(null),
