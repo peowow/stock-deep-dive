@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23 18:11 UTC",
+  "updated": "2026-11-23 18:13 UTC",
   "tickers": {
     "AAPL": {
       "symbol": "AAPL",
@@ -7,12 +7,12 @@
       "industry": "Consumer Electronics",
       "sector": "Technology",
       "benchmarkIndustry": "Computers/Peripherals",
-      "currentPrice": 348.73,
-      "marketCap": 5067808178176.0,
+      "currentPrice": 348.96,
+      "marketCap": 5071149989888.0,
       "enterpriseValue": 5015901044736.0,
-      "trailingPE": 38.83408,
-      "forwardPE": 32.983913,
-      "priceToBook": 45.21328,
+      "trailingPE": 38.859688,
+      "forwardPE": 33.005665,
+      "priceToBook": 45.243095,
       "trailingEps": 8.98,
       "forwardEps": 10.57273,
       "sharesOutstanding": 14532182000.0,
@@ -31,7 +31,7 @@
       "quickRatio": 0.827,
       "bookValue": 7.713,
       "dividendRate": 1.08,
-      "dividendYield": 0.003097,
+      "dividendYield": 0.003095,
       "payoutRatio": 0.118,
       "annuals": [
         {
@@ -151,14 +151,14 @@
       "industry": "Software - Infrastructure",
       "sector": "Technology",
       "benchmarkIndustry": "Software (System & Application)",
-      "currentPrice": 496.865,
-      "marketCap": 3689815998464.0,
+      "currentPrice": 497.18,
+      "marketCap": 3692155371520.0,
       "enterpriseValue": 3667561807872.0,
-      "trailingPE": 25.932411,
-      "forwardPE": 20.5309,
-      "priceToBook": 7.843049,
+      "trailingPE": 25.948853,
+      "forwardPE": 20.541435,
+      "priceToBook": 7.848021,
       "trailingEps": 19.16,
-      "forwardEps": 24.20084,
+      "forwardEps": 24.20376,
       "sharesOutstanding": 7426194552.0,
       "totalRevenue": 346444988416.0,
       "netIncomeToCommon": 142630993920.0,
@@ -175,7 +175,7 @@
       "quickRatio": 1.068,
       "bookValue": 63.351,
       "dividendRate": 3.92,
-      "dividendYield": 0.007889,
+      "dividendYield": 0.007884,
       "payoutRatio": 0.19,
       "annuals": [
         {
@@ -280,12 +280,12 @@
       "industry": "Internet Content & Information",
       "sector": "Communication Services",
       "benchmarkIndustry": "Software (Internet)",
-      "currentPrice": 284.13,
-      "marketCap": 3493094227968.0,
+      "currentPrice": 284.165,
+      "marketCap": 3493524406272.0,
       "enterpriseValue": 3164731342848.0,
-      "trailingPE": 14.837076,
-      "forwardPE": 18.573769,
-      "priceToBook": 5.296388,
+      "trailingPE": 14.838904,
+      "forwardPE": 18.576057,
+      "priceToBook": 5.29704,
       "trailingEps": 19.15,
       "forwardEps": 15.29738,
       "sharesOutstanding": 5888000000.0,
@@ -409,12 +409,12 @@
       "industry": "Semiconductors",
       "sector": "Technology",
       "benchmarkIndustry": "Semiconductor",
-      "currentPrice": 164.42,
-      "marketCap": 3970324496384.0,
+      "currentPrice": 164.28,
+      "marketCap": 3966868914176.0,
       "enterpriseValue": 2966443261952.0,
-      "trailingPE": 17.660912,
-      "forwardPE": 9.901856,
-      "priceToBook": 14.863776,
+      "trailingPE": 17.645542,
+      "forwardPE": 9.893239,
+      "priceToBook": 14.850841,
       "trailingEps": 9.31,
       "forwardEps": 16.60528,
       "sharesOutstanding": 24147000000.0,
@@ -433,7 +433,7 @@
       "quickRatio": 3.288,
       "bookValue": 11.062,
       "dividendRate": 1.0,
-      "dividendYield": 0.006082,
+      "dividendYield": 0.006087,
       "payoutRatio": 0.0354,
       "annuals": [
         {
@@ -553,13 +553,13 @@
       "industry": "Oil & Gas E&P",
       "sector": "Energy",
       "benchmarkIndustry": "Oil/Gas (Production and Exploration)",
-      "currentPrice": 14.36,
-      "marketCap": 2174104064.0,
+      "currentPrice": 14.34,
+      "marketCap": 2171076096.0,
       "enterpriseValue": 3421029888.0,
       "trailingPE": null,
-      "forwardPE": 6.870813,
-      "priceToBook": 1.054254,
-      "trailingEps": -3.13,
+      "forwardPE": 6.861244,
+      "priceToBook": 1.052786,
+      "trailingEps": -3.29,
       "forwardEps": 2.09,
       "sharesOutstanding": 151400000.0,
       "totalRevenue": 1968952960.0,
@@ -577,7 +577,7 @@
       "quickRatio": 0.494,
       "bookValue": 13.621,
       "dividendRate": 0.54,
-      "dividendYield": 0.037604,
+      "dividendYield": 0.037657,
       "payoutRatio": 1.4167,
       "annuals": [
         {
@@ -696,13 +696,13 @@
       "shortName": "Venture Global, Inc.",
       "industry": "Oil & Gas Midstream",
       "sector": "Energy",
-      "benchmarkIndustry": "Oil/Gas (Production and Exploration)",
-      "currentPrice": 12.12,
-      "marketCap": 30513907712.0,
+      "benchmarkIndustry": "Oil/Gas Distribution",
+      "currentPrice": 12.11,
+      "marketCap": 30488729600.0,
       "enterpriseValue": 75908907008.0,
-      "trailingPE": 5.855073,
-      "forwardPE": 7.24824,
-      "priceToBook": 2.757052,
+      "trailingPE": 5.850242,
+      "forwardPE": 7.24226,
+      "priceToBook": 2.754777,
       "trailingEps": 2.07,
       "forwardEps": 1.67213,
       "sharesOutstanding": 549044584.0,
@@ -721,7 +721,7 @@
       "quickRatio": 0.788,
       "bookValue": 4.396,
       "dividendRate": 0.16,
-      "dividendYield": 0.013201,
+      "dividendYield": 0.013212,
       "payoutRatio": 0.0449,
       "annuals": [
         {
@@ -841,12 +841,12 @@
       "industry": "Oil & Gas E&P",
       "sector": "Energy",
       "benchmarkIndustry": "Oil/Gas (Production and Exploration)",
-      "currentPrice": 24.1,
-      "marketCap": 4977997824.0,
+      "currentPrice": 24.07,
+      "marketCap": 4971801088.0,
       "enterpriseValue": 5999348224.0,
-      "trailingPE": 9.026217,
-      "forwardPE": 11.69903,
-      "priceToBook": 1.604634,
+      "trailingPE": 9.014981,
+      "forwardPE": 11.684466,
+      "priceToBook": 1.602637,
       "trailingEps": 2.67,
       "forwardEps": 2.06,
       "sharesOutstanding": 206555914.0,
@@ -865,7 +865,7 @@
       "quickRatio": 0.729,
       "bookValue": 15.019,
       "dividendRate": 1.56,
-      "dividendYield": 0.06473,
+      "dividendYield": 0.064811,
       "payoutRatio": 0.5112,
       "annuals": [
         {
@@ -978,179 +978,253 @@
         "curYearRevenueAvg": 1500000000.0,
         "curYearEpsAvg": 2.43
       }
+    },
+    "CVE.TO": {
+      "symbol": "CVE.TO",
+      "shortName": "CENOVUS ENERGY INC.",
+      "industry": "Oil & Gas Integrated",
+      "sector": "Energy",
+      "benchmarkIndustry": "Oil/Gas (Integrated)",
+      "currentPrice": 38.16,
+      "marketCap": 68967415808.0,
+      "enterpriseValue": 76268609536.0,
+      "trailingPE": 8.119149,
+      "forwardPE": 7.681561,
+      "priceToBook": 1.956823,
+      "trailingEps": 4.7,
+      "forwardEps": 4.96774,
+      "sharesOutstanding": 1807322179.0,
+      "totalRevenue": 56649998336.0,
+      "netIncomeToCommon": 8730000384.0,
+      "ebitda": 17213999104.0,
+      "freeCashflow": 10272374784.0,
+      "operatingMargins": 0.2069,
+      "profitMargins": 0.15417,
+      "grossMargins": 0.33915,
+      "returnOnEquity": 0.2744,
+      "returnOnAssets": 0.12047,
+      "totalCash": 5548000256.0,
+      "totalDebt": 11550000128.0,
+      "debtToEquity": 32.747,
+      "quickRatio": 1.158,
+      "bookValue": 19.501,
+      "dividendRate": 0.88,
+      "dividendYield": 0.023061,
+      "payoutRatio": 0.1787,
+      "annuals": [
+        {
+          "date": "2021-12-31",
+          "year": "2021",
+          "revenue": null,
+          "netIncome": null,
+          "eps": null,
+          "fcf": null,
+          "ebit": null,
+          "interestExpense": null,
+          "taxProvision": null,
+          "pretaxIncome": null,
+          "equity": null,
+          "totalDebt": null,
+          "cash": null
+        },
+        {
+          "date": "2022-12-31",
+          "year": "2022",
+          "revenue": 71765000000.0,
+          "netIncome": 6450000000.0,
+          "eps": 3.2,
+          "fcf": 7645000000.0,
+          "ebit": 9543000000.0,
+          "interestExpense": 812000000.0,
+          "taxProvision": 2281000000.0,
+          "pretaxIncome": 8731000000.0,
+          "equity": 27576000000.0,
+          "totalDebt": 11642000000.0,
+          "cash": 4524000000.0
+        },
+        {
+          "date": "2023-12-31",
+          "year": "2023",
+          "revenue": 55474000000.0,
+          "netIncome": 4109000000.0,
+          "eps": 2.12,
+          "fcf": 3090000000.0,
+          "ebit": 5763000000.0,
+          "interestExpense": 723000000.0,
+          "taxProvision": 931000000.0,
+          "pretaxIncome": 5040000000.0,
+          "equity": 28698000000.0,
+          "totalDebt": 9945000000.0,
+          "cash": 2227000000.0
+        },
+        {
+          "date": "2024-12-31",
+          "year": "2024",
+          "revenue": 57726000000.0,
+          "netIncome": 3142000000.0,
+          "eps": 1.67,
+          "fcf": 4220000000.0,
+          "ebit": 4720000000.0,
+          "interestExpense": 649000000.0,
+          "taxProvision": 929000000.0,
+          "pretaxIncome": 4071000000.0,
+          "equity": 29754000000.0,
+          "totalDebt": 10634000000.0,
+          "cash": 3093000000.0
+        },
+        {
+          "date": "2025-12-31",
+          "year": "2025",
+          "revenue": 52751000000.0,
+          "netIncome": 3930000000.0,
+          "eps": 2.15,
+          "fcf": 3321000000.0,
+          "ebit": 5138000000.0,
+          "interestExpense": 661000000.0,
+          "taxProvision": 547000000.0,
+          "pretaxIncome": 4477000000.0,
+          "equity": 31622000000.0,
+          "totalDebt": 14207000000.0,
+          "cash": 2740000000.0
+        }
+      ],
+      "estimates": {
+        "earningsHistory": [
+          {
+            "quarter": "2025-12-31",
+            "epsEstimate": 0.37379,
+            "epsActual": 0.4929,
+            "surprisePct": 31.87
+          },
+          {
+            "quarter": "2026-03-31",
+            "epsEstimate": 0.75994,
+            "epsActual": 0.8856,
+            "surprisePct": 16.54
+          },
+          {
+            "quarter": "2026-06-30",
+            "epsEstimate": 1.63802,
+            "epsActual": 1.6097,
+            "surprisePct": -1.73
+          },
+          {
+            "quarter": "2026-09-30",
+            "epsEstimate": 1.52966,
+            "epsActual": 1.78001,
+            "surprisePct": 16.37
+          }
+        ],
+        "fwdRevenueAvg": 60096022200.0,
+        "fwdRevenueGrowth": -0.1429,
+        "fwdEpsAvg": 4.96774,
+        "fwdEpsGrowth": -0.1674,
+        "curYearRevenueAvg": 70118887670.0,
+        "curYearEpsAvg": 5.96667
+      }
     }
   },
   "errors": {},
   "_industryBenchmark": {
-    "Drugs (Biotechnology)": {
-      "trailingPE": 109.27,
-      "forwardPE": 63.76,
-      "priceToBook": 8.22,
-      "operatingMargin": 16.17,
-      "netMargin": -5.0,
-      "roe": -5.67,
-      "roic": null,
-      "debtToEquity": 12.46
-    },
-    "Oil/Gas (Production and Exploration)": {
-      "trailingPE": 21.36,
-      "forwardPE": 16.14,
-      "priceToBook": 1.36,
-      "operatingMargin": 26.32,
-      "netMargin": 14.63,
-      "roe": 12.21,
-      "roic": null,
-      "debtToEquity": 36.69
-    },
-    "Healthcare Products": {
-      "trailingPE": 55.87,
-      "forwardPE": 42.33,
-      "priceToBook": 4.44,
-      "operatingMargin": 17.4,
-      "netMargin": 9.61,
-      "roe": 11.26,
-      "roic": null,
-      "debtToEquity": 12.52
-    },
-    "Real Estate (General/Diversified)": {
-      "trailingPE": 46.16,
-      "forwardPE": 14.33,
-      "priceToBook": 1.16,
-      "operatingMargin": 23.61,
-      "netMargin": 23.77,
-      "roe": 10.77,
-      "roic": null,
-      "debtToEquity": 29.6
-    },
-    "Software (Internet)": {
-      "trailingPE": 162.98,
-      "forwardPE": 64.81,
-      "priceToBook": 10.86,
-      "operatingMargin": 18.55,
-      "netMargin": -0.93,
-      "roe": -1.47,
-      "roic": null,
-      "debtToEquity": 13.74
-    },
-    "Insurance (Prop/Cas.)": {
-      "trailingPE": 18.05,
-      "forwardPE": 16.36,
-      "priceToBook": 2.02,
-      "operatingMargin": 15.67,
-      "netMargin": 11.13,
-      "roe": 18.71,
-      "roic": null,
-      "debtToEquity": 14.18
-    },
-    "Electrical Equipment": {
-      "trailingPE": 76.44,
+    "Electronics (General)": {
+      "trailingPE": 52.0,
       "forwardPE": 29.61,
-      "priceToBook": 6.51,
-      "operatingMargin": 10.9,
-      "netMargin": 0.94,
-      "roe": 1.53,
+      "priceToBook": 4.97,
+      "operatingMargin": 11.8,
+      "netMargin": 6.47,
+      "roe": 12.62,
       "roic": null,
-      "debtToEquity": 11.66
+      "debtToEquity": 10.35
     },
-    "Telecom (Wireless)": {
-      "trailingPE": 21.64,
-      "forwardPE": 35.63,
-      "priceToBook": 3.47,
-      "operatingMargin": 21.98,
-      "netMargin": 12.24,
-      "roe": 16.06,
+    "Information Services": {
+      "trailingPE": 29.35,
+      "forwardPE": 13.22,
+      "priceToBook": 3.79,
+      "operatingMargin": 13.51,
+      "netMargin": 6.53,
+      "roe": 14.95,
       "roic": null,
-      "debtToEquity": 52.77
+      "debtToEquity": 33.21
     },
-    "Trucking": {
-      "trailingPE": 33.87,
-      "forwardPE": 46.17,
-      "priceToBook": 2.86,
-      "operatingMargin": 7.31,
-      "netMargin": 3.79,
-      "roe": 7.6,
+    "Green & Renewable Energy": {
+      "trailingPE": 44.56,
+      "forwardPE": 42.71,
+      "priceToBook": 1.26,
+      "operatingMargin": 20.43,
+      "netMargin": -10.83,
+      "roe": -7.36,
       "roic": null,
-      "debtToEquity": 25.79
+      "debtToEquity": 113.73
     },
-    "R.E.I.T.": {
-      "trailingPE": 62.98,
-      "forwardPE": 45.11,
-      "priceToBook": 1.99,
-      "operatingMargin": 26.37,
-      "netMargin": 13.23,
-      "roe": 5.04,
+    "Oil/Gas Distribution": {
+      "trailingPE": 20.2,
+      "forwardPE": 42.52,
+      "priceToBook": 2.88,
+      "operatingMargin": 26.56,
+      "netMargin": 13.35,
+      "roe": 18.03,
       "roic": null,
-      "debtToEquity": 86.16
+      "debtToEquity": 58.24
     },
-    "Household Products": {
-      "trailingPE": 65.89,
+    "Coal & Related Energy": {
+      "trailingPE": 23.85,
+      "forwardPE": 34.39,
+      "priceToBook": 2.25,
+      "operatingMargin": -2.89,
+      "netMargin": -2.13,
+      "roe": -2.51,
+      "roic": null,
+      "debtToEquity": 11.57
+    },
+    "Healthcare Support Services": {
+      "trailingPE": 94.43,
+      "forwardPE": 55.29,
+      "priceToBook": 2.8,
+      "operatingMargin": 3.21,
+      "netMargin": 1.25,
+      "roe": 9.89,
+      "roic": null,
+      "debtToEquity": 34.69
+    },
+    "Beverage (Soft)": {
+      "trailingPE": 37.11,
+      "forwardPE": 23.7,
+      "priceToBook": 6.87,
+      "operatingMargin": 21.01,
+      "netMargin": 13.4,
+      "roe": 30.92,
+      "roic": null,
+      "debtToEquity": 19.45
+    },
+    "Oilfield Svcs/Equip.": {
+      "trailingPE": 37.98,
+      "forwardPE": 21.22,
+      "priceToBook": 1.92,
+      "operatingMargin": 4.98,
+      "netMargin": 2.34,
+      "roe": 8.65,
+      "roic": null,
+      "debtToEquity": 36.1
+    },
+    "Retail (Distributors)": {
+      "trailingPE": 103.56,
+      "forwardPE": 43.84,
+      "priceToBook": 4.04,
+      "operatingMargin": 10.56,
+      "netMargin": 6.05,
+      "roe": 18.33,
+      "roic": null,
+      "debtToEquity": 30.83
+    },
+    "Steel": {
+      "trailingPE": 77.37,
       "forwardPE": 16.85,
-      "priceToBook": 5.85,
-      "operatingMargin": 19.54,
-      "netMargin": 11.68,
-      "roe": 27.02,
+      "priceToBook": 1.88,
+      "operatingMargin": 4.5,
+      "netMargin": 1.93,
+      "roe": 3.68,
       "roic": null,
-      "debtToEquity": 17.84
-    },
-    "Auto Parts": {
-      "trailingPE": 27.85,
-      "forwardPE": 15.13,
-      "priceToBook": 1.87,
-      "operatingMargin": 6.37,
-      "netMargin": 0.72,
-      "roe": 2.17,
-      "roic": null,
-      "debtToEquity": 41.22
-    },
-    "Banks (Regional)": {
-      "trailingPE": 34.74,
-      "forwardPE": 11.0,
-      "priceToBook": 1.14,
-      "operatingMargin": 1.6,
-      "netMargin": 27.49,
-      "roe": 9.75,
-      "roic": null,
-      "debtToEquity": 50.8
-    },
-    "Advertising": {
-      "trailingPE": 132.24,
-      "forwardPE": 52.87,
-      "priceToBook": 4.55,
-      "operatingMargin": 13.3,
-      "netMargin": -0.3,
-      "roe": -1.34,
-      "roic": null,
-      "debtToEquity": 39.12
-    },
-    "Computer Services": {
-      "trailingPE": 26.45,
-      "forwardPE": 56.54,
-      "priceToBook": 4.73,
-      "operatingMargin": 8.27,
-      "netMargin": 4.45,
-      "roe": 18.25,
-      "roic": null,
-      "debtToEquity": 24.89
-    },
-    "Semiconductor": {
-      "trailingPE": 70.13,
-      "forwardPE": 37.29,
-      "priceToBook": 13.31,
-      "operatingMargin": 40.37,
-      "netMargin": 30.45,
-      "roe": 31.36,
-      "roic": null,
-      "debtToEquity": 2.58
-    },
-    "Rubber& Tires": {
-      "trailingPE": 35.81,
-      "forwardPE": 7.3,
-      "priceToBook": 0.79,
-      "operatingMargin": 2.38,
-      "netMargin": -9.49,
-      "roe": -36.41,
-      "roic": null,
-      "debtToEquity": 362.93
+      "debtToEquity": 23.17
     },
     "Retail (REITs)": {
       "trailingPE": 109.93,
@@ -1162,15 +1236,75 @@
       "roic": null,
       "debtToEquity": 55.89
     },
-    "Real Estate (Development)": {
-      "trailingPE": 29.45,
-      "forwardPE": 12.34,
-      "priceToBook": 0.99,
-      "operatingMargin": 22.4,
-      "netMargin": 7.01,
-      "roe": 5.06,
+    "Entertainment": {
+      "trailingPE": 171.99,
+      "forwardPE": 42.73,
+      "priceToBook": 4.8,
+      "operatingMargin": 13.33,
+      "netMargin": 4.43,
+      "roe": 6.09,
       "roic": null,
-      "debtToEquity": 100.8
+      "debtToEquity": 15.62
+    },
+    "R.E.I.T.": {
+      "trailingPE": 62.98,
+      "forwardPE": 45.11,
+      "priceToBook": 1.99,
+      "operatingMargin": 26.37,
+      "netMargin": 13.23,
+      "roe": 5.04,
+      "roic": null,
+      "debtToEquity": 86.16
+    },
+    "Beverage (Alcoholic)": {
+      "trailingPE": 34.97,
+      "forwardPE": 12.84,
+      "priceToBook": 1.91,
+      "operatingMargin": 23.37,
+      "netMargin": 0.56,
+      "roe": 0.57,
+      "roic": null,
+      "debtToEquity": 41.8
+    },
+    "Retail (Grocery and Food)": {
+      "trailingPE": 17.46,
+      "forwardPE": 14.34,
+      "priceToBook": 3.93,
+      "operatingMargin": 2.55,
+      "netMargin": 1.32,
+      "roe": 12.9,
+      "roic": null,
+      "debtToEquity": 50.89
+    },
+    "Recreation": {
+      "trailingPE": 24.85,
+      "forwardPE": 38.02,
+      "priceToBook": 4.03,
+      "operatingMargin": 11.37,
+      "netMargin": -4.72,
+      "roe": -12.76,
+      "roic": null,
+      "debtToEquity": 63.87
+    },
+    "Apparel": {
+      "trailingPE": 82.1,
+      "forwardPE": 24.89,
+      "priceToBook": 3.89,
+      "operatingMargin": 10.18,
+      "netMargin": 3.85,
+      "roe": 10.42,
+      "roic": null,
+      "debtToEquity": 33.02
+    },
+    "Cable TV": {
+      "trailingPE": 13.75,
+      "forwardPE": 9.21,
+      "priceToBook": 1.31,
+      "operatingMargin": 19.55,
+      "netMargin": 7.08,
+      "roe": 11.06,
+      "roic": null,
+      "debtToEquity": 142.93
     },
     "Software (Entertainment)": {
       "trailingPE": 70.74,
@@ -1181,6 +1315,76 @@
       "roe": 36.51,
       "roic": null,
       "debtToEquity": 2.09
+    },
+    "Homebuilding": {
+      "trailingPE": 10.2,
+      "forwardPE": 14.35,
+      "priceToBook": 1.63,
+      "operatingMargin": 12.91,
+      "netMargin": 9.47,
+      "roe": 14.23,
+      "roic": null,
+      "debtToEquity": 21.32
+    },
+    "Semiconductor Equip": {
+      "trailingPE": 47.58,
+      "forwardPE": 41.58,
+      "priceToBook": 9.7,
+      "operatingMargin": 28.34,
+      "netMargin": 21.32,
+      "roe": 35.78,
+      "roic": null,
+      "debtToEquity": 4.82
+    },
+    "Office Equipment & Services": {
+      "trailingPE": 13.42,
+      "forwardPE": 10.31,
+      "priceToBook": 2.92,
+      "operatingMargin": 11.71,
+      "netMargin": 4.38,
+      "roe": 13.23,
+      "roic": null,
+      "debtToEquity": 47.47
+    },
+    "Packaging & Container": {
+      "trailingPE": 60.51,
+      "forwardPE": 15.28,
+      "priceToBook": 2.18,
+      "operatingMargin": 10.03,
+      "netMargin": 4.48,
+      "roe": 12.29,
+      "roic": null,
+      "debtToEquity": 54.62
+    },
+    "Retail (Automotive)": {
+      "trailingPE": 34.26,
+      "forwardPE": 21.88,
+      "priceToBook": 7.48,
+      "operatingMargin": 6.51,
+      "netMargin": 3.36,
+      "roe": 34.38,
+      "roic": null,
+      "debtToEquity": 44.68
+    },
+    "Financial Svcs. (Non-bank & Insurance)": {
+      "trailingPE": 65.59,
+      "forwardPE": 16.38,
+      "priceToBook": 3.66,
+      "operatingMargin": 20.85,
+      "netMargin": 22.19,
+      "roe": 28.82,
+      "roic": null,
+      "debtToEquity": null
+    },
+    "Telecom (Wireless)": {
+      "trailingPE": 21.64,
+      "forwardPE": 35.63,
+      "priceToBook": 3.47,
+      "operatingMargin": 21.98,
+      "netMargin": 12.24,
+      "roe": 16.06,
+      "roic": null,
+      "debtToEquity": 52.77
     },
     "Chemical (Diversified)": {
       "trailingPE": 20.55,
@@ -1202,95 +1406,25 @@
       "roic": null,
       "debtToEquity": 5.67
     },
-    "Retail (Grocery and Food)": {
-      "trailingPE": 17.46,
-      "forwardPE": 14.34,
-      "priceToBook": 3.93,
-      "operatingMargin": 2.55,
-      "netMargin": 1.32,
-      "roe": 12.9,
+    "Electronics (Consumer & Office)": {
+      "trailingPE": null,
+      "forwardPE": 19.51,
+      "priceToBook": 3.85,
+      "operatingMargin": -0.2,
+      "netMargin": -9.42,
+      "roe": -28.81,
       "roic": null,
-      "debtToEquity": 50.89
+      "debtToEquity": 12.45
     },
-    "Green & Renewable Energy": {
-      "trailingPE": 44.56,
-      "forwardPE": 42.71,
-      "priceToBook": 1.26,
-      "operatingMargin": 20.43,
-      "netMargin": -10.83,
-      "roe": -7.36,
+    "Real Estate (Development)": {
+      "trailingPE": 29.45,
+      "forwardPE": 12.34,
+      "priceToBook": 0.99,
+      "operatingMargin": 22.4,
+      "netMargin": 7.01,
+      "roe": 5.06,
       "roic": null,
-      "debtToEquity": 113.73
-    },
-    "Information Services": {
-      "trailingPE": 29.35,
-      "forwardPE": 13.22,
-      "priceToBook": 3.79,
-      "operatingMargin": 13.51,
-      "netMargin": 6.53,
-      "roe": 14.95,
-      "roic": null,
-      "debtToEquity": 33.21
-    },
-    "Oil/Gas Distribution": {
-      "trailingPE": 20.2,
-      "forwardPE": 42.52,
-      "priceToBook": 2.88,
-      "operatingMargin": 26.56,
-      "netMargin": 13.35,
-      "roe": 18.03,
-      "roic": null,
-      "debtToEquity": 58.24
-    },
-    "Steel": {
-      "trailingPE": 77.37,
-      "forwardPE": 16.85,
-      "priceToBook": 1.88,
-      "operatingMargin": 4.5,
-      "netMargin": 1.93,
-      "roe": 3.68,
-      "roic": null,
-      "debtToEquity": 23.17
-    },
-    "Paper/Forest Products": {
-      "trailingPE": 7.03,
-      "forwardPE": 16.64,
-      "priceToBook": 1.83,
-      "operatingMargin": 7.02,
-      "netMargin": 3.44,
-      "roe": 7.01,
-      "roic": null,
-      "debtToEquity": 43.36
-    },
-    "Oilfield Svcs/Equip.": {
-      "trailingPE": 37.98,
-      "forwardPE": 21.22,
-      "priceToBook": 1.92,
-      "operatingMargin": 4.98,
-      "netMargin": 2.34,
-      "roe": 8.65,
-      "roic": null,
-      "debtToEquity": 36.1
-    },
-    "Utility (Water)": {
-      "trailingPE": 21.99,
-      "forwardPE": 21.3,
-      "priceToBook": 2.0,
-      "operatingMargin": 34.46,
-      "netMargin": 21.16,
-      "roe": 10.28,
-      "roic": null,
-      "debtToEquity": 62.25
-    },
-    "Telecom. Services": {
-      "trailingPE": 26.52,
-      "forwardPE": 26.5,
-      "priceToBook": 1.64,
-      "operatingMargin": 21.05,
-      "netMargin": 14.2,
-      "roe": 19.82,
-      "roic": null,
-      "debtToEquity": 95.4
+      "debtToEquity": 100.8
     },
     "Diversified": {
       "trailingPE": 14.13,
@@ -1302,85 +1436,25 @@
       "roic": null,
       "debtToEquity": 15.1
     },
-    "Power": {
-      "trailingPE": 20.75,
-      "forwardPE": 17.59,
-      "priceToBook": 2.28,
-      "operatingMargin": 21.9,
-      "netMargin": 12.73,
-      "roe": 12.4,
+    "Auto & Truck": {
+      "trailingPE": 44.59,
+      "forwardPE": 49.04,
+      "priceToBook": 7.72,
+      "operatingMargin": 3.16,
+      "netMargin": 1.29,
+      "roe": 3.16,
       "roic": null,
-      "debtToEquity": 73.91
+      "debtToEquity": 19.67
     },
-    "Electronics (General)": {
-      "trailingPE": 52.0,
-      "forwardPE": 29.61,
-      "priceToBook": 4.97,
-      "operatingMargin": 11.8,
-      "netMargin": 6.47,
-      "roe": 12.62,
+    "Telecom. Services": {
+      "trailingPE": 26.52,
+      "forwardPE": 26.5,
+      "priceToBook": 1.64,
+      "operatingMargin": 21.05,
+      "netMargin": 14.2,
+      "roe": 19.82,
       "roic": null,
-      "debtToEquity": 10.35
-    },
-    "Retail (Building Supply)": {
-      "trailingPE": 31.22,
-      "forwardPE": 23.14,
-      "priceToBook": 132.2,
-      "operatingMargin": 12.4,
-      "netMargin": 7.84,
-      "roe": null,
-      "roic": null,
-      "debtToEquity": 23.63
-    },
-    "Semiconductor Equip": {
-      "trailingPE": 47.58,
-      "forwardPE": 41.58,
-      "priceToBook": 9.7,
-      "operatingMargin": 28.34,
-      "netMargin": 21.32,
-      "roe": 35.78,
-      "roic": null,
-      "debtToEquity": 4.82
-    },
-    "Oil/Gas (Integrated)": {
-      "trailingPE": 13.01,
-      "forwardPE": 21.9,
-      "priceToBook": 1.71,
-      "operatingMargin": 11.56,
-      "netMargin": 8.3,
-      "roe": 9.96,
-      "roic": null,
-      "debtToEquity": 12.45
-    },
-    "Retail (Distributors)": {
-      "trailingPE": 103.56,
-      "forwardPE": 43.84,
-      "priceToBook": 4.04,
-      "operatingMargin": 10.56,
-      "netMargin": 6.05,
-      "roe": 18.33,
-      "roic": null,
-      "debtToEquity": 30.83
-    },
-    "Beverage (Alcoholic)": {
-      "trailingPE": 34.97,
-      "forwardPE": 12.84,
-      "priceToBook": 1.91,
-      "operatingMargin": 23.37,
-      "netMargin": 0.56,
-      "roe": 0.57,
-      "roic": null,
-      "debtToEquity": 41.8
-    },
-    "Transportation (Railroads)": {
-      "trailingPE": 21.5,
-      "forwardPE": 20.47,
-      "priceToBook": 5.83,
-      "operatingMargin": 37.9,
-      "netMargin": 24.73,
-      "roe": 29.07,
-      "roic": null,
-      "debtToEquity": 27.43
+      "debtToEquity": 95.4
     },
     "Metals & Mining": {
       "trailingPE": 92.87,
@@ -1392,435 +1466,15 @@
       "roic": null,
       "debtToEquity": 10.21
     },
-    "Electronics (Consumer & Office)": {
-      "trailingPE": null,
-      "forwardPE": 19.51,
-      "priceToBook": 3.85,
-      "operatingMargin": -0.2,
-      "netMargin": -9.42,
-      "roe": -28.81,
+    "Hotel/Gaming": {
+      "trailingPE": 83.16,
+      "forwardPE": 29.07,
+      "priceToBook": 12.3,
+      "operatingMargin": 21.58,
+      "netMargin": 10.38,
+      "roe": 45.38,
       "roic": null,
-      "debtToEquity": 12.45
-    },
-    "Telecom. Equipment": {
-      "trailingPE": 125.46,
-      "forwardPE": 39.47,
-      "priceToBook": 8.37,
-      "operatingMargin": 25.9,
-      "netMargin": 16.09,
-      "roe": 24.96,
-      "roic": null,
-      "debtToEquity": 9.25
-    },
-    "Publishing & Newspapers": {
-      "trailingPE": 18.57,
-      "forwardPE": 13.51,
-      "priceToBook": 2.28,
-      "operatingMargin": 11.01,
-      "netMargin": 8.19,
-      "roe": 13.83,
-      "roic": null,
-      "debtToEquity": 23.27
-    },
-    "Chemical (Specialty)": {
-      "trailingPE": 161.7,
-      "forwardPE": 19.32,
-      "priceToBook": 2.45,
-      "operatingMargin": 12.85,
-      "netMargin": 2.91,
-      "roe": 3.5,
-      "roic": null,
-      "debtToEquity": 29.72
-    },
-    "Drugs (Pharmaceutical)": {
-      "trailingPE": 335.27,
-      "forwardPE": 24.19,
-      "priceToBook": 6.64,
-      "operatingMargin": 31.24,
-      "netMargin": 18.54,
-      "roe": 24.04,
-      "roic": null,
-      "debtToEquity": 13.95
-    },
-    "Chemical (Basic)": {
-      "trailingPE": 14.07,
-      "forwardPE": 22.82,
-      "priceToBook": 1.12,
-      "operatingMargin": 3.06,
-      "netMargin": -3.73,
-      "roe": -8.29,
-      "roic": null,
-      "debtToEquity": 98.55
-    },
-    "Heathcare Information and Technology": {
-      "trailingPE": 219.64,
-      "forwardPE": 37.38,
-      "priceToBook": 4.0,
-      "operatingMargin": 17.12,
-      "netMargin": 7.45,
-      "roe": 6.4,
-      "roic": null,
-      "debtToEquity": 15.5
-    },
-    "Coal & Related Energy": {
-      "trailingPE": 23.85,
-      "forwardPE": 34.39,
-      "priceToBook": 2.25,
-      "operatingMargin": -2.89,
-      "netMargin": -2.13,
-      "roe": -2.51,
-      "roic": null,
-      "debtToEquity": 11.57
-    },
-    "Computers/Peripherals": {
-      "trailingPE": 80.95,
-      "forwardPE": 36.15,
-      "priceToBook": 34.08,
-      "operatingMargin": 24.96,
-      "netMargin": 17.78,
-      "roe": -0.17,
-      "roic": null,
-      "debtToEquity": 4.65
-    },
-    "Retail (Special Lines)": {
-      "trailingPE": 26.04,
-      "forwardPE": 21.52,
-      "priceToBook": 7.25,
-      "operatingMargin": 8.41,
-      "netMargin": 5.19,
-      "roe": 30.12,
-      "roic": null,
-      "debtToEquity": 20.88
-    },
-    "Air Transport": {
-      "trailingPE": 15.55,
-      "forwardPE": 11.37,
-      "priceToBook": 2.84,
-      "operatingMargin": 5.68,
-      "netMargin": 2.51,
-      "roe": 14.19,
-      "roic": null,
-      "debtToEquity": 87.76
-    },
-    "Construction Supplies": {
-      "trailingPE": 26.96,
-      "forwardPE": 17.69,
-      "priceToBook": 5.46,
-      "operatingMargin": 15.67,
-      "netMargin": 10.78,
-      "roe": 22.86,
-      "roic": null,
-      "debtToEquity": 18.09
-    },
-    "Furn/Home Furnishings": {
-      "trailingPE": 15.93,
-      "forwardPE": 20.34,
-      "priceToBook": 2.45,
-      "operatingMargin": 7.19,
-      "netMargin": 1.1,
-      "roe": 3.11,
-      "roic": null,
-      "debtToEquity": 43.96
-    },
-    "Tobacco": {
-      "trailingPE": 22.98,
-      "forwardPE": 17.64,
-      "priceToBook": null,
-      "operatingMargin": 44.04,
-      "netMargin": 26.65,
-      "roe": null,
-      "roic": null,
-      "debtToEquity": 22.48
-    },
-    "Precious Metals": {
-      "trailingPE": 119.66,
-      "forwardPE": 16.45,
-      "priceToBook": 3.64,
-      "operatingMargin": 41.01,
-      "netMargin": 28.59,
-      "roe": 23.52,
-      "roic": null,
-      "debtToEquity": 5.0
-    },
-    "Food Processing": {
-      "trailingPE": 30.97,
-      "forwardPE": 17.23,
-      "priceToBook": 1.8,
-      "operatingMargin": 11.0,
-      "netMargin": 2.82,
-      "roe": 4.6,
-      "roic": null,
-      "debtToEquity": 44.27
-    },
-    "Hospitals/Healthcare Facilities": {
-      "trailingPE": 24.35,
-      "forwardPE": 15.65,
-      "priceToBook": 5.62,
-      "operatingMargin": 14.05,
-      "netMargin": 6.3,
-      "roe": 50.84,
-      "roic": null,
-      "debtToEquity": 57.8
-    },
-    "Insurance (General)": {
-      "trailingPE": 55.15,
-      "forwardPE": 21.51,
-      "priceToBook": 3.45,
-      "operatingMargin": 23.07,
-      "netMargin": 12.37,
-      "roe": 19.07,
-      "roic": null,
-      "debtToEquity": 25.79
-    },
-    "Transportation": {
-      "trailingPE": 60.03,
-      "forwardPE": 19.76,
-      "priceToBook": 4.79,
-      "operatingMargin": 8.45,
-      "netMargin": 8.23,
-      "roe": 36.58,
-      "roic": null,
-      "debtToEquity": 36.51
-    },
-    "Entertainment": {
-      "trailingPE": 171.99,
-      "forwardPE": 42.73,
-      "priceToBook": 4.8,
-      "operatingMargin": 13.33,
-      "netMargin": 4.43,
-      "roe": 6.09,
-      "roic": null,
-      "debtToEquity": 15.62
-    },
-    "Packaging & Container": {
-      "trailingPE": 60.51,
-      "forwardPE": 15.28,
-      "priceToBook": 2.18,
-      "operatingMargin": 10.03,
-      "netMargin": 4.48,
-      "roe": 12.29,
-      "roic": null,
-      "debtToEquity": 54.62
-    },
-    "Utility (General)": {
-      "trailingPE": 21.03,
-      "forwardPE": 18.13,
-      "priceToBook": 1.81,
-      "operatingMargin": 23.84,
-      "netMargin": 14.18,
-      "roe": 10.42,
-      "roic": null,
-      "debtToEquity": 75.88
-    },
-    "Reinsurance": {
-      "trailingPE": 18.65,
-      "forwardPE": 8.14,
-      "priceToBook": 1.02,
-      "operatingMargin": 7.45,
-      "netMargin": 3.89,
-      "roe": 7.79,
-      "roic": null,
-      "debtToEquity": 42.89
-    },
-    "Machinery": {
-      "trailingPE": 42.6,
-      "forwardPE": 24.06,
-      "priceToBook": 4.5,
-      "operatingMargin": 16.78,
-      "netMargin": 10.58,
-      "roe": 16.42,
-      "roic": null,
-      "debtToEquity": 14.4
-    },
-    "Engineering/Construction": {
-      "trailingPE": 90.22,
-      "forwardPE": 28.11,
-      "priceToBook": 5.49,
-      "operatingMargin": 7.04,
-      "netMargin": 5.94,
-      "roe": 26.14,
-      "roic": null,
-      "debtToEquity": 14.15
-    },
-    "Shipbuilding & Marine": {
-      "trailingPE": 13.7,
-      "forwardPE": 11.56,
-      "priceToBook": 1.5,
-      "operatingMargin": 13.29,
-      "netMargin": 9.48,
-      "roe": 10.15,
-      "roic": null,
-      "debtToEquity": 22.73
-    },
-    "Environmental & Waste Services": {
-      "trailingPE": 66.2,
-      "forwardPE": 61.07,
-      "priceToBook": 6.59,
-      "operatingMargin": 15.32,
-      "netMargin": 8.24,
-      "roe": 19.74,
-      "roic": null,
-      "debtToEquity": 21.23
-    },
-    "Food Wholesalers": {
-      "trailingPE": 24.9,
-      "forwardPE": 16.64,
-      "priceToBook": 4.88,
-      "operatingMargin": 2.75,
-      "netMargin": 1.17,
-      "roe": 18.22,
-      "roic": null,
-      "debtToEquity": 46.33
-    },
-    "Restaurant/Dining": {
-      "trailingPE": 67.67,
-      "forwardPE": 31.9,
-      "priceToBook": 74.74,
-      "operatingMargin": 17.16,
-      "netMargin": 9.37,
-      "roe": 0.1,
-      "roic": null,
-      "debtToEquity": 27.05
-    },
-    "Investments & Asset Management": {
-      "trailingPE": 378.64,
-      "forwardPE": 18.77,
-      "priceToBook": 2.49,
-      "operatingMargin": 30.59,
-      "netMargin": 18.36,
-      "roe": 15.88,
-      "roic": null,
-      "debtToEquity": 32.0
-    },
-    "Education": {
-      "trailingPE": 27.6,
-      "forwardPE": 18.11,
-      "priceToBook": 2.6,
-      "operatingMargin": 16.7,
-      "netMargin": 8.79,
-      "roe": 15.9,
-      "roic": null,
-      "debtToEquity": 23.84
-    },
-    "Brokerage & Investment Banking": {
-      "trailingPE": 26.81,
-      "forwardPE": 19.86,
-      "priceToBook": 2.81,
-      "operatingMargin": 2.51,
-      "netMargin": 14.45,
-      "roe": 17.77,
-      "roic": null,
-      "debtToEquity": 135.16
-    },
-    "Healthcare Support Services": {
-      "trailingPE": 94.43,
-      "forwardPE": 55.29,
-      "priceToBook": 2.8,
-      "operatingMargin": 3.21,
-      "netMargin": 1.25,
-      "roe": 9.89,
-      "roic": null,
-      "debtToEquity": 34.69
-    },
-    "Aerospace/Defense": {
-      "trailingPE": 118.0,
-      "forwardPE": 45.87,
-      "priceToBook": 7.88,
-      "operatingMargin": 9.8,
-      "netMargin": 4.99,
-      "roe": 15.27,
-      "roic": null,
-      "debtToEquity": 15.38
-    },
-    "Broadcasting": {
-      "trailingPE": 6.38,
-      "forwardPE": 17.5,
-      "priceToBook": 1.66,
-      "operatingMargin": 13.28,
-      "netMargin": 2.06,
-      "roe": 3.99,
-      "roic": null,
-      "debtToEquity": 93.06
-    },
-    "Bank (Money Center)": {
-      "trailingPE": 17.58,
-      "forwardPE": 13.04,
-      "priceToBook": 1.62,
-      "operatingMargin": 2.3,
-      "netMargin": 28.89,
-      "roe": 12.86,
-      "roic": null,
-      "debtToEquity": 164.05
-    },
-    "Cable TV": {
-      "trailingPE": 13.75,
-      "forwardPE": 9.21,
-      "priceToBook": 1.31,
-      "operatingMargin": 19.55,
-      "netMargin": 7.08,
-      "roe": 11.06,
-      "roic": null,
-      "debtToEquity": 142.93
-    },
-    "Apparel": {
-      "trailingPE": 82.1,
-      "forwardPE": 24.89,
-      "priceToBook": 3.89,
-      "operatingMargin": 10.18,
-      "netMargin": 3.85,
-      "roe": 10.42,
-      "roic": null,
-      "debtToEquity": 33.02
-    },
-    "Auto & Truck": {
-      "trailingPE": 44.59,
-      "forwardPE": 49.04,
-      "priceToBook": 7.72,
-      "operatingMargin": 3.16,
-      "netMargin": 1.29,
-      "roe": 3.16,
-      "roic": null,
-      "debtToEquity": 19.67
-    },
-    "Business & Consumer Services": {
-      "trailingPE": 35.43,
-      "forwardPE": 18.7,
-      "priceToBook": 5.3,
-      "operatingMargin": 13.66,
-      "netMargin": 7.03,
-      "roe": 18.2,
-      "roic": null,
-      "debtToEquity": 19.96
-    },
-    "Shoe": {
-      "trailingPE": 18.7,
-      "forwardPE": 17.1,
-      "priceToBook": 6.06,
-      "operatingMargin": 10.4,
-      "netMargin": 6.27,
-      "roe": 19.49,
-      "roic": null,
-      "debtToEquity": 12.54
-    },
-    "Homebuilding": {
-      "trailingPE": 10.2,
-      "forwardPE": 14.35,
-      "priceToBook": 1.63,
-      "operatingMargin": 12.91,
-      "netMargin": 9.47,
-      "roe": 14.23,
-      "roic": null,
-      "debtToEquity": 21.32
-    },
-    "Building Materials": {
-      "trailingPE": 21.06,
-      "forwardPE": 18.39,
-      "priceToBook": 3.62,
-      "operatingMargin": 13.28,
-      "netMargin": 7.42,
-      "roe": 16.0,
-      "roic": null,
-      "debtToEquity": 23.99
+      "debtToEquity": 37.72
     },
     "Financial Svcs. (Non-bank & Insurance )": {
       "trailingPE": null,
@@ -1832,15 +1486,165 @@
       "roic": null,
       "debtToEquity": 272.33
     },
-    "Beverage (Soft)": {
-      "trailingPE": 37.11,
-      "forwardPE": 23.7,
-      "priceToBook": 6.87,
-      "operatingMargin": 21.01,
-      "netMargin": 13.4,
-      "roe": 30.92,
+    "Air Transport": {
+      "trailingPE": 15.55,
+      "forwardPE": 11.37,
+      "priceToBook": 2.84,
+      "operatingMargin": 5.68,
+      "netMargin": 2.51,
+      "roe": 14.19,
       "roic": null,
-      "debtToEquity": 19.45
+      "debtToEquity": 87.76
+    },
+    "Brokerage & Investment Banking": {
+      "trailingPE": 26.81,
+      "forwardPE": 19.86,
+      "priceToBook": 2.81,
+      "operatingMargin": 2.51,
+      "netMargin": 14.45,
+      "roe": 17.77,
+      "roic": null,
+      "debtToEquity": 135.16
+    },
+    "Auto Parts": {
+      "trailingPE": 27.85,
+      "forwardPE": 15.13,
+      "priceToBook": 1.87,
+      "operatingMargin": 6.37,
+      "netMargin": 0.72,
+      "roe": 2.17,
+      "roic": null,
+      "debtToEquity": 41.22
+    },
+    "Restaurant/Dining": {
+      "trailingPE": 67.67,
+      "forwardPE": 31.9,
+      "priceToBook": 74.74,
+      "operatingMargin": 17.16,
+      "netMargin": 9.37,
+      "roe": 0.1,
+      "roic": null,
+      "debtToEquity": 27.05
+    },
+    "Broadcasting": {
+      "trailingPE": 6.38,
+      "forwardPE": 17.5,
+      "priceToBook": 1.66,
+      "operatingMargin": 13.28,
+      "netMargin": 2.06,
+      "roe": 3.99,
+      "roic": null,
+      "debtToEquity": 93.06
+    },
+    "Insurance (Prop/Cas.)": {
+      "trailingPE": 18.05,
+      "forwardPE": 16.36,
+      "priceToBook": 2.02,
+      "operatingMargin": 15.67,
+      "netMargin": 11.13,
+      "roe": 18.71,
+      "roic": null,
+      "debtToEquity": 14.18
+    },
+    "Aerospace/Defense": {
+      "trailingPE": 118.0,
+      "forwardPE": 45.87,
+      "priceToBook": 7.88,
+      "operatingMargin": 9.8,
+      "netMargin": 4.99,
+      "roe": 15.27,
+      "roic": null,
+      "debtToEquity": 15.38
+    },
+    "Utility (General)": {
+      "trailingPE": 21.03,
+      "forwardPE": 18.13,
+      "priceToBook": 1.81,
+      "operatingMargin": 23.84,
+      "netMargin": 14.18,
+      "roe": 10.42,
+      "roic": null,
+      "debtToEquity": 75.88
+    },
+    "Transportation (Railroads)": {
+      "trailingPE": 21.5,
+      "forwardPE": 20.47,
+      "priceToBook": 5.83,
+      "operatingMargin": 37.9,
+      "netMargin": 24.73,
+      "roe": 29.07,
+      "roic": null,
+      "debtToEquity": 27.43
+    },
+    "Precious Metals": {
+      "trailingPE": 119.66,
+      "forwardPE": 16.45,
+      "priceToBook": 3.64,
+      "operatingMargin": 41.01,
+      "netMargin": 28.59,
+      "roe": 23.52,
+      "roic": null,
+      "debtToEquity": 5.0
+    },
+    "Oil/Gas (Integrated)": {
+      "trailingPE": 13.01,
+      "forwardPE": 21.9,
+      "priceToBook": 1.71,
+      "operatingMargin": 11.56,
+      "netMargin": 8.3,
+      "roe": 9.96,
+      "roic": null,
+      "debtToEquity": 12.45
+    },
+    "Trucking": {
+      "trailingPE": 33.87,
+      "forwardPE": 46.17,
+      "priceToBook": 2.86,
+      "operatingMargin": 7.31,
+      "netMargin": 3.79,
+      "roe": 7.6,
+      "roic": null,
+      "debtToEquity": 25.79
+    },
+    "Banks (Regional)": {
+      "trailingPE": 34.74,
+      "forwardPE": 11.0,
+      "priceToBook": 1.14,
+      "operatingMargin": 1.6,
+      "netMargin": 27.49,
+      "roe": 9.75,
+      "roic": null,
+      "debtToEquity": 50.8
+    },
+    "Chemical (Basic)": {
+      "trailingPE": 14.07,
+      "forwardPE": 22.82,
+      "priceToBook": 1.12,
+      "operatingMargin": 3.06,
+      "netMargin": -3.73,
+      "roe": -8.29,
+      "roic": null,
+      "debtToEquity": 98.55
+    },
+    "Shipbuilding & Marine": {
+      "trailingPE": 13.7,
+      "forwardPE": 11.56,
+      "priceToBook": 1.5,
+      "operatingMargin": 13.29,
+      "netMargin": 9.48,
+      "roe": 10.15,
+      "roic": null,
+      "debtToEquity": 22.73
+    },
+    "Education": {
+      "trailingPE": 27.6,
+      "forwardPE": 18.11,
+      "priceToBook": 2.6,
+      "operatingMargin": 16.7,
+      "netMargin": 8.79,
+      "roe": 15.9,
+      "roic": null,
+      "debtToEquity": 23.84
     },
     "Insurance (Life)": {
       "trailingPE": 19.86,
@@ -1852,55 +1656,255 @@
       "roic": null,
       "debtToEquity": 66.98
     },
-    "Real Estate (Operations & Services)": {
-      "trailingPE": 61.29,
-      "forwardPE": 93.59,
-      "priceToBook": 3.06,
-      "operatingMargin": 4.55,
-      "netMargin": 1.19,
-      "roe": 3.3,
+    "Shoe": {
+      "trailingPE": 18.7,
+      "forwardPE": 17.1,
+      "priceToBook": 6.06,
+      "operatingMargin": 10.4,
+      "netMargin": 6.27,
+      "roe": 19.49,
       "roic": null,
-      "debtToEquity": 24.61
+      "debtToEquity": 12.54
     },
-    "Office Equipment & Services": {
-      "trailingPE": 13.42,
-      "forwardPE": 10.31,
-      "priceToBook": 2.92,
-      "operatingMargin": 11.71,
-      "netMargin": 4.38,
-      "roe": 13.23,
+    "Semiconductor": {
+      "trailingPE": 70.13,
+      "forwardPE": 37.29,
+      "priceToBook": 13.31,
+      "operatingMargin": 40.37,
+      "netMargin": 30.45,
+      "roe": 31.36,
       "roic": null,
-      "debtToEquity": 47.47
+      "debtToEquity": 2.58
     },
-    "Hotel/Gaming": {
-      "trailingPE": 83.16,
-      "forwardPE": 29.07,
-      "priceToBook": 12.3,
-      "operatingMargin": 21.58,
-      "netMargin": 10.38,
-      "roe": 45.38,
+    "Computers/Peripherals": {
+      "trailingPE": 80.95,
+      "forwardPE": 36.15,
+      "priceToBook": 34.08,
+      "operatingMargin": 24.96,
+      "netMargin": 17.78,
+      "roe": -0.17,
       "roic": null,
-      "debtToEquity": 37.72
+      "debtToEquity": 4.65
     },
-    "Financial Svcs. (Non-bank & Insurance)": {
-      "trailingPE": 65.59,
-      "forwardPE": 16.38,
-      "priceToBook": 3.66,
-      "operatingMargin": 20.85,
-      "netMargin": 22.19,
-      "roe": 28.82,
+    "Hospitals/Healthcare Facilities": {
+      "trailingPE": 24.35,
+      "forwardPE": 15.65,
+      "priceToBook": 5.62,
+      "operatingMargin": 14.05,
+      "netMargin": 6.3,
+      "roe": 50.84,
       "roic": null,
-      "debtToEquity": null
+      "debtToEquity": 57.8
     },
-    "Recreation": {
-      "trailingPE": 24.85,
-      "forwardPE": 38.02,
-      "priceToBook": 4.03,
-      "operatingMargin": 11.37,
-      "netMargin": -4.72,
-      "roe": -12.76,
+    "Advertising": {
+      "trailingPE": 132.24,
+      "forwardPE": 52.87,
+      "priceToBook": 4.55,
+      "operatingMargin": 13.3,
+      "netMargin": -0.3,
+      "roe": -1.34,
       "roic": null,
-      "debtToEquity": 63.87
+      "debtToEquity": 39.12
+    },
+    "Power": {
+      "trailingPE": 20.75,
+      "forwardPE": 17.59,
+      "priceToBook": 2.28,
+      "operatingMargin": 21.9,
+      "netMargin": 12.73,
+      "roe": 12.4,
+      "roic": null,
+      "debtToEquity": 73.91
+    },
+    "Utility (Water)": {
+      "trailingPE": 21.99,
+      "forwardPE": 21.3,
+      "priceToBook": 2.0,
+      "operatingMargin": 34.46,
+      "netMargin": 21.16,
+      "roe": 10.28,
+      "roic": null,
+      "debtToEquity": 62.25
+    },
+    "Heathcare Information and Technology": {
+      "trailingPE": 219.64,
+      "forwardPE": 37.38,
+      "priceToBook": 4.0,
+      "operatingMargin": 17.12,
+      "netMargin": 7.45,
+      "roe": 6.4,
+      "roic": null,
+      "debtToEquity": 15.5
+    },
+    "Construction Supplies": {
+      "trailingPE": 26.96,
+      "forwardPE": 17.69,
+      "priceToBook": 5.46,
+      "operatingMargin": 15.67,
+      "netMargin": 10.78,
+      "roe": 22.86,
+      "roic": null,
+      "debtToEquity": 18.09
+    },
+    "Drugs (Pharmaceutical)": {
+      "trailingPE": 335.27,
+      "forwardPE": 24.19,
+      "priceToBook": 6.64,
+      "operatingMargin": 31.24,
+      "netMargin": 18.54,
+      "roe": 24.04,
+      "roic": null,
+      "debtToEquity": 13.95
+    },
+    "Telecom. Equipment": {
+      "trailingPE": 125.46,
+      "forwardPE": 39.47,
+      "priceToBook": 8.37,
+      "operatingMargin": 25.9,
+      "netMargin": 16.09,
+      "roe": 24.96,
+      "roic": null,
+      "debtToEquity": 9.25
+    },
+    "Retail (Building Supply)": {
+      "trailingPE": 31.22,
+      "forwardPE": 23.14,
+      "priceToBook": 132.2,
+      "operatingMargin": 12.4,
+      "netMargin": 7.84,
+      "roe": null,
+      "roic": null,
+      "debtToEquity": 23.63
+    },
+    "Environmental & Waste Services": {
+      "trailingPE": 66.2,
+      "forwardPE": 61.07,
+      "priceToBook": 6.59,
+      "operatingMargin": 15.32,
+      "netMargin": 8.24,
+      "roe": 19.74,
+      "roic": null,
+      "debtToEquity": 21.23
+    },
+    "Household Products": {
+      "trailingPE": 65.89,
+      "forwardPE": 16.85,
+      "priceToBook": 5.85,
+      "operatingMargin": 19.54,
+      "netMargin": 11.68,
+      "roe": 27.02,
+      "roic": null,
+      "debtToEquity": 17.84
+    },
+    "Rubber& Tires": {
+      "trailingPE": 35.81,
+      "forwardPE": 7.3,
+      "priceToBook": 0.79,
+      "operatingMargin": 2.38,
+      "netMargin": -9.49,
+      "roe": -36.41,
+      "roic": null,
+      "debtToEquity": 362.93
+    },
+    "Transportation": {
+      "trailingPE": 60.03,
+      "forwardPE": 19.76,
+      "priceToBook": 4.79,
+      "operatingMargin": 8.45,
+      "netMargin": 8.23,
+      "roe": 36.58,
+      "roic": null,
+      "debtToEquity": 36.51
+    },
+    "Food Processing": {
+      "trailingPE": 30.97,
+      "forwardPE": 17.23,
+      "priceToBook": 1.8,
+      "operatingMargin": 11.0,
+      "netMargin": 2.82,
+      "roe": 4.6,
+      "roic": null,
+      "debtToEquity": 44.27
+    },
+    "Bank (Money Center)": {
+      "trailingPE": 17.58,
+      "forwardPE": 13.04,
+      "priceToBook": 1.62,
+      "operatingMargin": 2.3,
+      "netMargin": 28.89,
+      "roe": 12.86,
+      "roic": null,
+      "debtToEquity": 164.05
+    },
+    "Drugs (Biotechnology)": {
+      "trailingPE": 109.27,
+      "forwardPE": 63.76,
+      "priceToBook": 8.22,
+      "operatingMargin": 16.17,
+      "netMargin": -5.0,
+      "roe": -5.67,
+      "roic": null,
+      "debtToEquity": 12.46
+    },
+    "Publishing & Newspapers": {
+      "trailingPE": 18.57,
+      "forwardPE": 13.51,
+      "priceToBook": 2.28,
+      "operatingMargin": 11.01,
+      "netMargin": 8.19,
+      "roe": 13.83,
+      "roic": null,
+      "debtToEquity": 23.27
+    },
+    "Food Wholesalers": {
+      "trailingPE": 24.9,
+      "forwardPE": 16.64,
+      "priceToBook": 4.88,
+      "operatingMargin": 2.75,
+      "netMargin": 1.17,
+      "roe": 18.22,
+      "roic": null,
+      "debtToEquity": 46.33
+    },
+    "Building Materials": {
+      "trailingPE": 21.06,
+      "forwardPE": 18.39,
+      "priceToBook": 3.62,
+      "operatingMargin": 13.28,
+      "netMargin": 7.42,
+      "roe": 16.0,
+      "roic": null,
+      "debtToEquity": 23.99
+    },
+    "Insurance (General)": {
+      "trailingPE": 55.15,
+      "forwardPE": 21.51,
+      "priceToBook": 3.45,
+      "operatingMargin": 23.07,
+      "netMargin": 12.37,
+      "roe": 19.07,
+      "roic": null,
+      "debtToEquity": 25.79
+    },
+    "Machinery": {
+      "trailingPE": 42.6,
+      "forwardPE": 24.06,
+      "priceToBook": 4.5,
+      "operatingMargin": 16.78,
+      "netMargin": 10.58,
+      "roe": 16.42,
+      "roic": null,
+      "debtToEquity": 14.4
+    },
+    "Electrical Equipment": {
+      "trailingPE": 76.44,
+      "forwardPE": 29.61,
+      "priceToBook": 6.51,
+      "operatingMargin": 10.9,
+      "netMargin": 0.94,
+      "roe": 1.53,
+      "roic": null,
+      "debtToEquity": 11.66
     },
     "Farming/Agriculture": {
       "trailingPE": 16.79,
@@ -1912,6 +1916,116 @@
       "roic": null,
       "debtToEquity": 50.87
     },
+    "Computer Services": {
+      "trailingPE": 26.45,
+      "forwardPE": 56.54,
+      "priceToBook": 4.73,
+      "operatingMargin": 8.27,
+      "netMargin": 4.45,
+      "roe": 18.25,
+      "roic": null,
+      "debtToEquity": 24.89
+    },
+    "Real Estate (Operations & Services)": {
+      "trailingPE": 61.29,
+      "forwardPE": 93.59,
+      "priceToBook": 3.06,
+      "operatingMargin": 4.55,
+      "netMargin": 1.19,
+      "roe": 3.3,
+      "roic": null,
+      "debtToEquity": 24.61
+    },
+    "Chemical (Specialty)": {
+      "trailingPE": 161.7,
+      "forwardPE": 19.32,
+      "priceToBook": 2.45,
+      "operatingMargin": 12.85,
+      "netMargin": 2.91,
+      "roe": 3.5,
+      "roic": null,
+      "debtToEquity": 29.72
+    },
+    "Investments & Asset Management": {
+      "trailingPE": 378.64,
+      "forwardPE": 18.77,
+      "priceToBook": 2.49,
+      "operatingMargin": 30.59,
+      "netMargin": 18.36,
+      "roe": 15.88,
+      "roic": null,
+      "debtToEquity": 32.0
+    },
+    "Tobacco": {
+      "trailingPE": 22.98,
+      "forwardPE": 17.64,
+      "priceToBook": null,
+      "operatingMargin": 44.04,
+      "netMargin": 26.65,
+      "roe": null,
+      "roic": null,
+      "debtToEquity": 22.48
+    },
+    "Paper/Forest Products": {
+      "trailingPE": 7.03,
+      "forwardPE": 16.64,
+      "priceToBook": 1.83,
+      "operatingMargin": 7.02,
+      "netMargin": 3.44,
+      "roe": 7.01,
+      "roic": null,
+      "debtToEquity": 43.36
+    },
+    "Retail (Special Lines)": {
+      "trailingPE": 26.04,
+      "forwardPE": 21.52,
+      "priceToBook": 7.25,
+      "operatingMargin": 8.41,
+      "netMargin": 5.19,
+      "roe": 30.12,
+      "roic": null,
+      "debtToEquity": 20.88
+    },
+    "Business & Consumer Services": {
+      "trailingPE": 35.43,
+      "forwardPE": 18.7,
+      "priceToBook": 5.3,
+      "operatingMargin": 13.66,
+      "netMargin": 7.03,
+      "roe": 18.2,
+      "roic": null,
+      "debtToEquity": 19.96
+    },
+    "Engineering/Construction": {
+      "trailingPE": 90.22,
+      "forwardPE": 28.11,
+      "priceToBook": 5.49,
+      "operatingMargin": 7.04,
+      "netMargin": 5.94,
+      "roe": 26.14,
+      "roic": null,
+      "debtToEquity": 14.15
+    },
+    "Software (Internet)": {
+      "trailingPE": 162.98,
+      "forwardPE": 64.81,
+      "priceToBook": 10.86,
+      "operatingMargin": 18.55,
+      "netMargin": -0.93,
+      "roe": -1.47,
+      "roic": null,
+      "debtToEquity": 13.74
+    },
+    "Reinsurance": {
+      "trailingPE": 18.65,
+      "forwardPE": 8.14,
+      "priceToBook": 1.02,
+      "operatingMargin": 7.45,
+      "netMargin": 3.89,
+      "roe": 7.79,
+      "roic": null,
+      "debtToEquity": 42.89
+    },
     "Retail (General)": {
       "trailingPE": 46.68,
       "forwardPE": 23.97,
@@ -1922,15 +2036,45 @@
       "roic": null,
       "debtToEquity": 8.13
     },
-    "Retail (Automotive)": {
-      "trailingPE": 34.26,
-      "forwardPE": 21.88,
-      "priceToBook": 7.48,
-      "operatingMargin": 6.51,
-      "netMargin": 3.36,
-      "roe": 34.38,
+    "Healthcare Products": {
+      "trailingPE": 55.87,
+      "forwardPE": 42.33,
+      "priceToBook": 4.44,
+      "operatingMargin": 17.4,
+      "netMargin": 9.61,
+      "roe": 11.26,
       "roic": null,
-      "debtToEquity": 44.68
+      "debtToEquity": 12.52
+    },
+    "Real Estate (General/Diversified)": {
+      "trailingPE": 46.16,
+      "forwardPE": 14.33,
+      "priceToBook": 1.16,
+      "operatingMargin": 23.61,
+      "netMargin": 23.77,
+      "roe": 10.77,
+      "roic": null,
+      "debtToEquity": 29.6
+    },
+    "Oil/Gas (Production and Exploration)": {
+      "trailingPE": 21.36,
+      "forwardPE": 16.14,
+      "priceToBook": 1.36,
+      "operatingMargin": 26.32,
+      "netMargin": 14.63,
+      "roe": 12.21,
+      "roic": null,
+      "debtToEquity": 36.69
+    },
+    "Furn/Home Furnishings": {
+      "trailingPE": 15.93,
+      "forwardPE": 20.34,
+      "priceToBook": 2.45,
+      "operatingMargin": 7.19,
+      "netMargin": 1.1,
+      "roe": 3.11,
+      "roic": null,
+      "debtToEquity": 43.96
     }
   }
 }
