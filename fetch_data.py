@@ -82,45 +82,62 @@ def parse_stern_cell(text):
         return None
 
 
-def fetch_damodaran_table(url):
-    resp = requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0"})
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.text, "html.parser")
-    target_table = None
-    header_idx = 0
-    headers = []
+def fetch_damodaran_table(name, url):
+    try:
+        resp = requests.get(
+            url,
+            timeout=25,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "Accept": "text/html,application/xhtml+xml",
+            },
+        )
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        target_rows = None
+        header_idx = 0
+        headers = []
 
-    for tbl in soup.find_all("table"):
-        rows = tbl.find_all("tr")
-        for idx, tr in enumerate(rows[:5]):
-            cells = [c.get_text(" ", strip=True) for c in tr.find_all(["th", "td"])]
-            if any("industry name" in c.lower() for c in cells):
-                target_table = rows
-                header_idx = idx
-                headers = cells
-                break
-        if target_table:
-            break
-
-    if not target_table:
-        return {}
-
-    col_idx = next((i for i, h in enumerate(headers) if "industry name" in h.lower()), 0)
-    data = {}
-    for tr in target_table[header_idx + 1 :]:
-        cells = [c.get_text(" ", strip=True) for c in tr.find_all(["th", "td"])]
-        if len(cells) <= col_idx:
-            continue
-        ind_name = re.sub(r"\s+", " ", cells[col_idx]).strip()
-        if not ind_name or ind_name.lower().startswith("total"):
-            continue
-        row_dict = {}
-        for i, h in enumerate(headers):
-            if i == col_idx or i >= len(cells):
+        # Only inspect innermost tables (skip outer layout wrappers)
+        for tbl in soup.find_all("table"):
+            if tbl.find("table"):
                 continue
-            row_dict[h.strip()] = parse_stern_cell(cells[i])
-        data[ind_name] = row_dict
-    return data
+            rows = tbl.find_all("tr")
+            for idx, tr in enumerate(rows[:15]):
+                cells = [re.sub(r"\s+", " ", c.get_text(" ", strip=True)) for c in tr.find_all(["th", "td"])]
+                if any("industry" in c.lower() and "name" in c.lower() for c in cells):
+                    target_rows = rows
+                    header_idx = idx
+                    headers = cells
+                    break
+            if target_rows:
+                break
+
+        if not target_rows:
+            print(f"Damodaran [{name}]: header not found")
+            return {}
+
+        col_idx = next((i for i, h in enumerate(headers) if "industry" in h.lower() and "name" in h.lower()), 0)
+        data = {}
+        for tr in target_rows[header_idx + 1 :]:
+            cells = [c.get_text(" ", strip=True) for c in tr.find_all(["th", "td"])]
+            if len(cells) <= col_idx:
+                continue
+            ind_name = re.sub(r"\s+", " ", cells[col_idx]).strip()
+            if not ind_name or ind_name.lower().startswith("total"):
+                continue
+            row_dict = {}
+            for i, h in enumerate(headers):
+                if i == col_idx or i >= len(cells):
+                    continue
+                row_dict[h.strip()] = parse_stern_cell(cells[i])
+            data[ind_name] = row_dict
+
+        print(f"Damodaran [{name}]: loaded {len(data)} industries")
+        return data
+    except Exception as exc:
+        print(f"Damodaran [{name}] failed: {exc}")
+        return {}
 
 
 def find_header_value(row, keywords):
@@ -132,34 +149,31 @@ def find_header_value(row, keywords):
 
 
 def build_damodaran_benchmarks():
+    pe_tbl = fetch_damodaran_table("pe", DAMODARAN_URLS["pe"])
+    margin_tbl = fetch_damodaran_table("margin", DAMODARAN_URLS["margin"])
+    roe_tbl = fetch_damodaran_table("roe", DAMODARAN_URLS["roe"])
+    pbv_tbl = fetch_damodaran_table("pbv", DAMODARAN_URLS["pbv"])
+    debt_tbl = fetch_damodaran_table("debt", DAMODARAN_URLS["debt"])
+
+    all_inds = set(pe_tbl) | set(margin_tbl) | set(roe_tbl) | set(pbv_tbl) | set(debt_tbl)
     merged = {}
-    try:
-        pe_tbl = fetch_damodaran_table(DAMODARAN_URLS["pe"])
-        margin_tbl = fetch_damodaran_table(DAMODARAN_URLS["margin"])
-        roe_tbl = fetch_damodaran_table(DAMODARAN_URLS["roe"])
-        pbv_tbl = fetch_damodaran_table(DAMODARAN_URLS["pbv"])
-        debt_tbl = fetch_damodaran_table(DAMODARAN_URLS["debt"])
+    for ind in all_inds:
+        pe_r = pe_tbl.get(ind, {})
+        mg_r = margin_tbl.get(ind, {})
+        ro_r = roe_tbl.get(ind, {})
+        pb_r = pbv_tbl.get(ind, {})
+        db_r = debt_tbl.get(ind, {})
 
-        all_inds = set(pe_tbl) | set(margin_tbl) | set(roe_tbl) | set(pbv_tbl) | set(debt_tbl)
-        for ind in all_inds:
-            pe_r = pe_tbl.get(ind, {})
-            mg_r = margin_tbl.get(ind, {})
-            ro_r = roe_tbl.get(ind, {})
-            pb_r = pbv_tbl.get(ind, {})
-            db_r = debt_tbl.get(ind, {})
-
-            merged[ind] = {
-                "trailingPE": find_header_value(pe_r, ["trailing pe"]),
-                "forwardPE": find_header_value(pe_r, ["forward pe"]),
-                "priceToBook": find_header_value(pb_r, ["pbv", "price/bv", "price to book"]),
-                "operatingMargin": find_header_value(mg_r, ["pre-tax operating margin", "operating margin"]),
-                "netMargin": find_header_value(mg_r, ["net margin"]),
-                "roe": find_header_value(ro_r, ["roe"]),
-                "roic": find_header_value(ro_r, ["roic", "roc"]),
-                "debtToEquity": find_header_value(db_r, ["d/e", "debt/equity", "debt to equity"]),
-            }
-    except Exception as exc:
-        print(f"Warning: Damodaran fetch partial/failed: {exc}")
+        merged[ind] = {
+            "trailingPE": find_header_value(pe_r, ["trailing pe", "trailing p/e", "current pe"]),
+            "forwardPE": find_header_value(pe_r, ["forward pe", "forward p/e"]),
+            "priceToBook": find_header_value(pb_r, ["pbv", "price/bv", "price to book", "price / book"]),
+            "operatingMargin": find_header_value(mg_r, ["pre-tax operating margin", "operating margin", "unadjusted operating"]),
+            "netMargin": find_header_value(mg_r, ["net margin"]),
+            "roe": find_header_value(ro_r, ["roe"]),
+            "roic": find_header_value(ro_r, ["roic", "roc", "return on capital"]),
+            "debtToEquity": find_header_value(db_r, ["d/e", "debt/equity", "debt to equity", "debt / equity"]),
+        }
 
     if not merged and os.path.exists(OUTPUT_PATH):
         try:
@@ -179,6 +193,9 @@ def match_industry(yahoo_ind, benchmarks):
         mapped = YAHOO_TO_DAMODARAN[key]
         if mapped in benchmarks:
             return mapped, benchmarks[mapped]
+        for b_name in benchmarks:
+            if b_name.lower() == mapped.lower():
+                return b_name, benchmarks[b_name]
 
     for b_name in benchmarks:
         if b_name.lower() == key:
@@ -379,6 +396,7 @@ def main():
 
             y_ind = info.get("industry")
             b_name, _ = match_industry(y_ind, benchmarks)
+            print(f"  {sym}: yahoo='{y_ind}' -> damodaran='{b_name}'")
             annuals = extract_annuals(tk)
             estimates = extract_estimates(tk)
 
