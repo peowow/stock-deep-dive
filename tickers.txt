@@ -1,5 +1,5 @@
-# Add one stock ticker per line.
-CLS
-VG
+# Add one stock ticker per line. Saving this file automatically updates data.json.
+AAPL
+MSFT
 GOOGL
 NVDA
