@@ -17,9 +17,6 @@
       --muted: #bda899;
       --green: #4ade80;
       --red: #f87171;
-      --c1: #d97706;
-      --c2: #38bdf8;
-      --c3: #c084fc;
     }
 
     * { box-sizing: border-box; }
@@ -34,11 +31,7 @@
       overflow-x: hidden;
     }
 
-    .container {
-      max-width: 1360px;
-      margin: 0 auto;
-      padding: 18px 24px;
-    }
+    .container { max-width: 1360px; margin: 0 auto; padding: 18px 24px; }
 
     header {
       background: var(--surface);
@@ -54,33 +47,15 @@
       align-items: center;
       gap: 16px;
       margin-bottom: 14px;
+      flex-wrap: wrap;
     }
 
-    .brand h1 {
-      margin: 0;
-      font-size: 1.4rem;
-      letter-spacing: 0.02em;
-      color: #ffffff;
-    }
+    .brand h1 { margin: 0; font-size: 1.4rem; letter-spacing: 0.02em; color: #ffffff; }
+    .brand p { margin: 2px 0 0; font-size: 0.85rem; color: var(--muted); }
 
-    .brand p {
-      margin: 2px 0 0;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
+    .sync-bar { display: flex; align-items: center; gap: 10px; font-size: 0.83rem; color: var(--muted); flex-wrap: wrap; }
 
-    .sync-bar {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.83rem;
-      color: var(--muted);
-    }
-
-    button, input {
-      font-family: inherit;
-      font-size: 0.88rem;
-    }
+    button, input { font-family: inherit; font-size: 0.88rem; }
 
     .btn {
       background: var(--surface-2);
@@ -89,32 +64,16 @@
       border-radius: 8px;
       padding: 7px 12px;
       cursor: pointer;
-      transition: background 0.15s ease, border-color 0.15s ease;
       display: inline-flex;
       align-items: center;
       gap: 6px;
     }
-
     .btn:hover { background: var(--surface-3); }
     .btn:disabled { opacity: 0.55; cursor: not-allowed; }
-
-    .btn-primary {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #ffffff;
-      font-weight: 600;
-    }
-
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: #ffffff; font-weight: 600; }
     .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
-
     .btn-sm { padding: 5px 10px; font-size: 0.8rem; }
-
-    .btn.active {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #ffffff;
-      font-weight: 600;
-    }
+    .btn.active { background: var(--accent); border-color: var(--accent); color: #ffffff; font-weight: 600; }
 
     .token-panel {
       display: none;
@@ -125,16 +84,9 @@
       border-radius: 10px;
       font-size: 0.82rem;
     }
-
     .token-panel.open { display: block; }
 
-    .token-grid {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px;
-      margin-top: 8px;
-    }
+    .token-grid { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 8px; }
 
     .picker-row {
       display: flex;
@@ -146,12 +98,7 @@
       border-top: 1px solid var(--border);
     }
 
-    .picker-left {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px;
-    }
+    .picker-left { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 
     .pill {
       display: inline-flex;
@@ -165,47 +112,15 @@
       color: #ffffff;
       font-size: 0.88rem;
     }
-
     .pill-price { color: var(--accent); font-weight: 700; font-size: 0.85rem; }
     .pill-ind { color: var(--muted); font-weight: 400; font-size: 0.77rem; }
-
-    .pill-link {
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.76rem;
-      font-weight: 500;
-      border-left: 1px solid var(--border);
-      padding-left: 7px;
-    }
-
+    .pill-link { color: var(--muted); text-decoration: none; font-size: 0.76rem; font-weight: 500; border-left: 1px solid var(--border); padding-left: 7px; }
     .pill-link:hover { color: #ffffff; text-decoration: underline; }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      display: inline-block;
-      flex-shrink: 0;
-    }
-
-    .pill button {
-      background: none;
-      border: none;
-      color: var(--muted);
-      cursor: pointer;
-      padding: 0 2px;
-      font-size: 1rem;
-      line-height: 1;
-    }
-
+    .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+    .pill button { background: none; border: none; color: var(--muted); cursor: pointer; padding: 0 2px; font-size: 1rem; line-height: 1; }
     .pill button:hover { color: var(--red); }
 
-    .add-box, .new-ticker-box {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      position: relative;
-    }
+    .add-box, .new-ticker-box { display: flex; align-items: center; gap: 8px; position: relative; }
 
     .input-field {
       background: var(--bg);
@@ -214,11 +129,7 @@
       border-radius: 8px;
       padding: 7px 11px;
     }
-
-    .input-field:focus {
-      outline: none;
-      border-color: var(--accent);
-    }
+    .input-field:focus { outline: none; border-color: var(--accent); }
 
     .dropdown-list {
       position: absolute;
@@ -235,9 +146,7 @@
       box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
       display: none;
     }
-
     .dropdown-list.open { display: block; }
-
     .dropdown-item {
       padding: 8px 12px;
       cursor: pointer;
@@ -247,7 +156,6 @@
       font-size: 0.85rem;
       border-bottom: 1px solid rgba(74, 54, 40, 0.45);
     }
-
     .dropdown-item:last-child { border-bottom: none; }
     .dropdown-item:hover { background: var(--surface-3); }
     .dropdown-item strong { color: #ffffff; }
@@ -262,136 +170,45 @@
       min-width: 0;
     }
 
-    .module-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 12px;
-      margin-bottom: 14px;
-      flex-wrap: wrap;
-    }
-
+    .module-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
     .module-title { margin: 0; font-size: 1.1rem; color: #ffffff; }
     .module-sub { margin: 3px 0 0; font-size: 0.82rem; color: var(--muted); }
-
     .btn-group { display: flex; flex-wrap: wrap; gap: 6px; }
-
-    .legend {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      font-size: 0.83rem;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-
+    .legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.83rem; color: var(--muted); margin-bottom: 10px; }
     .legend-item { display: inline-flex; align-items: center; gap: 6px; }
 
     .svg-wrap { width: 100%; position: relative; }
     svg { display: block; width: 100%; height: auto; overflow: visible; }
-
-    .bar-hover { cursor: pointer; transition: opacity 0.12s ease; }
+    .bar-hover { cursor: pointer; }
     .bar-hover:hover { opacity: 0.85; }
 
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin-bottom: 18px;
-    }
-
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px; }
     .two-col .module { margin-bottom: 0; }
 
     .pos { color: var(--green); font-weight: 700; }
     .neg { color: var(--red); font-weight: 700; }
     .amb { color: var(--accent); font-weight: 700; }
 
-    .section-divider-title {
-      margin: 22px 0 4px;
-      font-size: 0.96rem;
-      color: #ffffff;
-    }
+    .section-divider-title { margin: 22px 0 4px; font-size: 0.96rem; color: #ffffff; }
+    .section-divider-sub { margin: 0 0 8px; font-size: 0.8rem; color: var(--muted); }
 
-    .section-divider-sub {
-      margin: 0 0 8px;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    .table-wrap {
-      width: 100%;
-      overflow-x: auto;
-      margin-top: 8px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.82rem;
-    }
-
-    th, td {
-      text-align: left;
-      padding: 9px 11px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    th {
-      color: var(--muted);
-      font-weight: 600;
-      background: var(--surface-2);
-      white-space: nowrap;
-    }
-
+    .table-wrap { width: 100%; overflow-x: auto; margin-top: 8px; border: 1px solid var(--border); border-radius: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    th, td { text-align: left; padding: 9px 11px; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 600; background: var(--surface-2); white-space: nowrap; }
     tr:last-child td { border-bottom: none; }
     .row-group-start td { border-top: 2px solid var(--surface-3); }
 
     .bench-row { margin-bottom: 14px; }
-    .bench-label {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.84rem;
-      margin-bottom: 5px;
-      gap: 8px;
-    }
+    .bench-label { display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 5px; gap: 8px; }
     .bench-label strong { color: #ffffff; }
     .bench-label span { color: var(--muted); }
-
-    .bar-track {
-      width: 100%;
-      height: 10px;
-      background: var(--bg);
-      border-radius: 999px;
-      overflow: hidden;
-      position: relative;
-    }
-
+    .bar-track { width: 100%; height: 10px; background: var(--bg); border-radius: 999px; overflow: hidden; position: relative; }
     .bar-fill { height: 100%; border-radius: 999px; }
 
-    .health-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px;
-    }
-
-    .health-card {
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 13px;
-    }
-
-    .health-card h4 {
-      margin: 0 0 10px;
-      color: #ffffff;
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      font-size: 0.96rem;
-    }
-
+    .health-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .health-card { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 13px; }
+    .health-card h4 { margin: 0 0 10px; color: #ffffff; display: flex; align-items: center; gap: 7px; font-size: 0.96rem; }
     .meter-row { margin-bottom: 10px; font-size: 0.82rem; }
     .meter-top { display: flex; justify-content: space-between; margin-bottom: 4px; gap: 8px; }
 
@@ -408,11 +225,7 @@
 
     .footnote { font-size: 0.77rem; color: var(--muted); margin-top: 10px; }
 
-    .tip-target {
-      cursor: help;
-      border-bottom: 1px dotted var(--muted);
-      display: inline-block;
-    }
+    .tip-target { cursor: help; border-bottom: 1px dotted var(--muted); display: inline-block; }
     .tip-target:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
     #floatingTip {
@@ -430,25 +243,13 @@
       pointer-events: none;
       display: none;
     }
-
     #floatingTip .tip-title { font-weight: 700; color: #ffffff; margin-bottom: 4px; display: block; }
-    #floatingTip .tip-dir {
-      margin-top: 6px;
-      display: inline-block;
-      padding: 2px 7px;
-      border-radius: 6px;
-      font-size: 0.74rem;
-      font-weight: 700;
-      background: var(--surface-2);
-    }
-
+    #floatingTip .tip-dir { margin-top: 6px; display: inline-block; padding: 2px 7px; border-radius: 6px; font-size: 0.74rem; font-weight: 700; background: var(--surface-2); }
     .dir-high { color: var(--green); }
     .dir-low { color: #38bdf8; }
     .dir-mod { color: var(--accent); }
 
-    @media (max-width: 980px) {
-      .two-col { grid-template-columns: 1fr; }
-    }
+    @media (max-width: 980px) { .two-col { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -467,7 +268,7 @@
             <span class="dot" id="tokenStatusDot" style="background:var(--accent);"></span>
             GitHub Token
           </button>
-          <button class="btn btn-sm" id="triggerRunBtn" type="button" title="Run Python fetcher on GitHub to refresh all stocks">Run Data Refresh</button>
+          <button class="btn btn-sm" id="triggerRunBtn" type="button">Run Data Refresh</button>
           <button class="btn btn-sm" id="refreshBtn" type="button">Reload Page Data</button>
         </div>
       </div>
@@ -477,7 +278,7 @@
           Paste your GitHub Personal Access Token once to add new tickers right from this page. It saves <strong>only in your browser</strong> (never uploaded to GitHub).
         </div>
         <div class="token-grid">
-          <input type="password" id="ghTokenInput" class="input-field" style="width:260px;" placeholder="ghp_... or github_pat_..." />
+          <input type="password" id="ghTokenInput" class="input-field" style="width:260px;" placeholder="github_pat_... or ghp_..." />
           <input type="text" id="ghOwnerInput" class="input-field" style="width:140px;" placeholder="GitHub username" />
           <input type="text" id="ghRepoInput" class="input-field" style="width:160px;" placeholder="Repo (stock-deep-dive)" />
           <button class="btn btn-sm btn-primary" id="saveTokenBtn" type="button">Save Token</button>
@@ -505,7 +306,6 @@
     <div id="statusBanner" class="status-banner">Loading stock database...</div>
 
     <div id="appContent" style="display:none;">
-      <!-- MODULE 1 -->
       <section class="module">
         <div class="module-head">
           <div>
@@ -537,7 +337,6 @@
         </p>
       </section>
 
-      <!-- MODULE 2 & 3 -->
       <div class="two-col">
         <section class="module">
           <div class="module-head">
@@ -564,10 +363,21 @@
   </div>
 
   <script>
-    (function () {
-      const COLORS = ["#d97706", "#38bdf8", "#c084fc"];
+    window.addEventListener("error", function (e) {
+      var banner = document.getElementById("statusBanner");
+      if (banner) {
+        banner.style.display = "block";
+        banner.style.color = "#f87171";
+        banner.textContent = "Script error (line " + e.lineno + "): " + e.message;
+      }
+    });
+  </script>
 
-      const METRIC_INFO = {
+  <script>
+    (function () {
+      var COLORS = ["#d97706", "#38bdf8", "#c084fc"];
+
+      var METRIC_INFO = {
         revenue: { title: "Annual Revenue", desc: "Total yearly sales from core business operations.", dir: "Better: Higher & steadily growing", cls: "dir-high" },
         earnings: { title: "Earnings (Net Income)", desc: "Final net profit after operating expenses, interest, and taxes.", dir: "Better: Higher & growing consistently", cls: "dir-high" },
         eps: { title: "Earnings Per Share (EPS)", desc: "Net profit divided by total shares.", dir: "Better: Higher", cls: "dir-high" },
@@ -596,37 +406,899 @@
         payoutRatio: { title: "Dividend Payout Ratio", desc: "Share of earnings paid out as dividends.", dir: "Better: Lower / Moderate (under 60% is safer)", cls: "dir-low" }
       };
 
-      const $ = (id) => document.getElementById(id);
+      function $(id) { return document.getElementById(id); }
+
+      function firstNum(a, b, c) {
+        if (a !== null && a !== undefined) return a;
+        if (b !== null && b !== undefined) return b;
+        return c !== undefined ? c : null;
+      }
 
       function storageGet(key, fallback) {
         try {
-          const raw = localStorage.getItem(key);
+          var raw = localStorage.getItem(key);
           return raw ? JSON.parse(raw) : fallback;
-        } catch (_) {
+        } catch (e) {
           return fallback;
         }
       }
 
       function storageSet(key, val) {
-        try { localStorage.setItem(key, JSON.stringify(val)); } catch (_) {}
+        try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {}
       }
 
       function detectRepoFromUrl() {
-        let owner = "";
-        let repo = "stock-deep-dive";
-        if (window.location.hostname.endsWith(".github.io")) {
+        var owner = "";
+        var repo = "stock-deep-dive";
+        if (window.location.hostname.indexOf(".github.io") !== -1) {
           owner = window.location.hostname.replace(".github.io", "");
-          const parts = window.location.pathname.split("/").filter(Boolean);
+          var parts = window.location.pathname.split("/").filter(Boolean);
           if (parts.length > 0) repo = parts[0];
         }
-        return { owner, repo };
+        return { owner: owner, repo: repo };
       }
 
-      const detected = detectRepoFromUrl();
-      const state = {
+      var detected = detectRepoFromUrl();
+      var state = {
         raw: null,
         tickers: {},
         searchIndex: [],
         benchmarks: {},
         benchIsPercent: {},
         normalizedCache: Object.create(null),
+        selected: [],
+        finMetric: "revenue",
+        loadSeq: 0,
+        ghToken: storageGet("sdd_gh_token", ""),
+        ghOwner: storageGet("sdd_gh_owner", "") || detected.owner,
+        ghRepo: storageGet("sdd_gh_repo", "") || detected.repo
+      };
+
+      function esc(str) {
+        return String(str == null ? "" : str)
+          .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+      }
+
+      function tipHtml(key, label) {
+        return '<span class="tip-target" tabindex="0" data-metric="' + esc(key) + '">' + esc(label) + '</span>';
+      }
+
+      function num(v) {
+        if (v === null || v === undefined || v === "" || v === "None" || v === "NaN") return null;
+        var n = Number(v);
+        return Number.isFinite(n) ? n : null;
+      }
+
+      function fmtMoney(v, decimals) {
+        if (decimals === undefined) decimals = 2;
+        var n = num(v);
+        if (n === null) return "—";
+        var sign = n < 0 ? "-" : "";
+        var abs = Math.abs(n);
+        if (abs >= 1e12) return sign + "$" + (abs / 1e12).toFixed(2) + "T";
+        if (abs >= 1e9) return sign + "$" + (abs / 1e9).toFixed(2) + "B";
+        if (abs >= 1e6) return sign + "$" + (abs / 1e6).toFixed(1) + "M";
+        if (abs >= 1e3) return sign + "$" + (abs / 1e3).toFixed(1) + "K";
+        return sign + "$" + abs.toFixed(decimals);
+      }
+
+      function fmtNum(v, suffix, dec) {
+        var n = num(v);
+        return n === null ? "—" : n.toFixed(dec) + suffix;
+      }
+
+      function fmtPctNum(pctVal, dec) {
+        return pctVal === null ? "—" : pctVal.toFixed(dec) + "%";
+      }
+
+      function detectBenchmarkScales(benchMap) {
+        var scales = {};
+        if (!benchMap || typeof benchMap !== "object") return scales;
+        var entries = Object.values(benchMap).filter(function (v) { return v && typeof v === "object"; });
+        if (!entries.length) return scales;
+
+        ["operatingMargin", "netMargin", "roe", "roic"].forEach(function (k) {
+          var vals = entries.map(function (r) { return num(r[k]); }).filter(function (x) { return x !== null; }).map(Math.abs);
+          if (vals.length) {
+            vals.sort(function (a, b) { return a - b; });
+            scales[k] = vals[Math.floor(vals.length / 2)] > 1.2;
+          }
+        });
+
+        var deVals = entries.map(function (r) { return num(r.debtToEquity); }).filter(function (x) { return x !== null; }).map(Math.abs);
+        if (deVals.length) {
+          deVals.sort(function (a, b) { return a - b; });
+          scales.debtToEquity = deVals[Math.floor(deVals.length / 2)] > 5;
+        }
+        return scales;
+      }
+
+      function calcCagr(series) {
+        if (!series || series.length < 2) return null;
+        var first = series[0];
+        var last = series[series.length - 1];
+        if (first.value <= 0 || last.value <= 0) return null;
+        var years = Math.max(1, Number(last.year) - Number(first.year));
+        return Math.pow(last.value / first.value, 1 / years) - 1;
+      }
+
+      function getNormalizedStock(sym) {
+        if (state.normalizedCache[sym]) return state.normalizedCache[sym];
+        var t = state.tickers[sym] || {};
+        var annuals = Array.isArray(t.annuals) ? t.annuals : [];
+        var est = t.estimates || {};
+
+        function buildAnnualSeries(field, fallbackVal) {
+          var pts = annuals
+            .filter(function (a) { return num(a[field]) !== null; })
+            .map(function (a) { return { year: a.year || String(a.date || "").slice(0, 4), date: a.date, value: num(a[field]) }; });
+          if (!pts.length && fallbackVal !== null) {
+            pts.push({ year: "TTM", date: "TTM", value: fallbackVal });
+          }
+          return pts;
+        }
+
+        var shares = num(t.sharesOutstanding);
+        var revSeries = buildAnnualSeries("revenue", num(t.totalRevenue));
+        var earnSeries = buildAnnualSeries("netIncome", num(t.netIncomeToCommon));
+        var fcfSeries = buildAnnualSeries("fcf", num(t.freeCashflow));
+        var epsSeries = buildAnnualSeries("eps", null);
+        if (!epsSeries.length && shares && shares > 0 && earnSeries.length) {
+          epsSeries = earnSeries.map(function (p) { return { year: p.year, date: p.date, value: p.value / shares }; });
+        }
+        if (!epsSeries.length && num(t.trailingEps) !== null) {
+          epsSeries.push({ year: "TTM", date: "TTM", value: num(t.trailingEps) });
+        }
+
+        var latestAnn = annuals.length ? annuals[annuals.length - 1] : {};
+        var opmRev = (num(t.operatingMargins) !== null && num(t.totalRevenue) !== null) ? num(t.operatingMargins) * num(t.totalRevenue) : null;
+        var ebit = firstNum(num(latestAnn.ebit), opmRev, null);
+        var taxProv = num(latestAnn.taxProvision);
+        var pretax = num(latestAnn.pretaxIncome);
+        var bvShares = (num(t.bookValue) !== null && shares !== null) ? num(t.bookValue) * shares : null;
+        var equity = firstNum(num(latestAnn.equity), bvShares, null);
+        var totalDebt = firstNum(num(t.totalDebt), num(latestAnn.totalDebt), null);
+        var totalCash = firstNum(num(t.totalCash), num(latestAnn.cash), null);
+        var intExp = num(latestAnn.interestExpense);
+
+        var roicPct = null;
+        if (ebit !== null && equity !== null) {
+          var taxRate = 0.21;
+          if (taxProv !== null && pretax !== null && pretax > 0) {
+            taxRate = Math.max(0, Math.min(0.4, taxProv / pretax));
+          }
+          var nopat = ebit * (1 - taxRate);
+          var investedCap = (totalDebt !== null ? totalDebt : 0) + equity - (totalCash !== null ? totalCash : 0);
+          if (investedCap > 0) roicPct = (nopat / investedCap) * 100;
+        }
+
+        var interestCoverage = (ebit !== null && intExp !== null && Math.abs(intExp) >= 1) ? ebit / Math.abs(intExp) : null;
+        var fwdEps = firstNum(num(est.fwdEpsAvg), num(t.forwardEps), null);
+        var marketCap = num(t.marketCap);
+        var fwdPE = num(t.forwardPE);
+        var fwdEarnings = null;
+        if (fwdEps !== null && shares !== null && shares > 0) fwdEarnings = fwdEps * shares;
+        else if (marketCap !== null && fwdPE !== null && fwdPE > 0) fwdEarnings = marketCap / fwdPE;
+
+        var revCagr = calcCagr(revSeries);
+        var fwdRevenue = num(est.fwdRevenueAvg);
+        var fwdRevLabel = "Consensus";
+        if (fwdRevenue === null) {
+          fwdRevLabel = "Trend Est.";
+          var lastRev = revSeries.length ? revSeries[revSeries.length - 1].value : num(t.totalRevenue);
+          if (lastRev !== null && revCagr !== null) {
+            fwdRevenue = lastRev * (1 + Math.max(-0.4, Math.min(0.8, revCagr)));
+          }
+        }
+
+        var fcfLatest = num(t.freeCashflow);
+        var ebitda = num(t.ebitda);
+        var netCash = (totalCash !== null || totalDebt !== null) ? (totalCash || 0) - (totalDebt || 0) : null;
+
+        var normalized = {
+          sym: sym,
+          raw: t,
+          name: t.shortName || sym,
+          industry: t.industry,
+          benchmarkIndustry: t.benchmarkIndustry,
+          currentPrice: num(t.currentPrice),
+          marketCap: marketCap,
+          totalRevenue: num(t.totalRevenue),
+          netIncomeToCommon: num(t.netIncomeToCommon),
+          freeCashflow: fcfLatest,
+          trailEps: num(t.trailingEps),
+          fwdEps: fwdEps,
+          fwdEarnings: fwdEarnings,
+          fwdRevenue: fwdRevenue,
+          fwdRevLabel: fwdRevLabel,
+          trailPE: num(t.trailingPE),
+          fwdPE: fwdPE,
+          priceToBook: num(t.priceToBook),
+          fcfYieldPct: (fcfLatest !== null && marketCap > 0) ? (fcfLatest / marketCap) * 100 : null,
+          opMarginPct: num(t.operatingMargins) !== null ? num(t.operatingMargins) * 100 : null,
+          profitMarginPct: num(t.profitMargins) !== null ? num(t.profitMargins) * 100 : null,
+          roePct: num(t.returnOnEquity) !== null ? num(t.returnOnEquity) * 100 : null,
+          roaPct: num(t.returnOnAssets) !== null ? num(t.returnOnAssets) * 100 : null,
+          roicPct: roicPct,
+          debtToEquityRatio: num(t.debtToEquity) !== null ? num(t.debtToEquity) / 100 : null,
+          totalCash: totalCash,
+          totalDebt: totalDebt,
+          netCash: netCash,
+          quickRatio: num(t.quickRatio),
+          debtToEbitda: (totalDebt !== null && ebitda !== null && ebitda > 0) ? totalDebt / ebitda : null,
+          interestCoverage: interestCoverage,
+          divYieldPct: num(t.dividendYield) !== null ? num(t.dividendYield) * 100 : null,
+          payoutRatioPct: num(t.payoutRatio) !== null ? num(t.payoutRatio) * 100 : null,
+          series: { revenue: revSeries, earnings: earnSeries, eps: epsSeries, fcf: fcfSeries },
+          cagr: {
+            revenue: revCagr,
+            earnings: calcCagr(earnSeries),
+            eps: calcCagr(epsSeries),
+            fcf: calcCagr(fcfSeries)
+          },
+          earningsHistory: Array.isArray(est.earningsHistory) ? est.earningsHistory : []
+        };
+
+        state.normalizedCache[sym] = normalized;
+        return normalized;
+      }
+
+      function pickBenchVal(bData, key, type) {
+        if (!bData || bData[key] === undefined || bData[key] === null) return null;
+        var v = num(bData[key]);
+        if (v === null) return null;
+        if (type === "pct") return state.benchIsPercent[key] === false ? v * 100 : v;
+        if (type === "de") return state.benchIsPercent[key] === true ? v / 100 : v;
+        return v;
+      }
+
+      function applyLoadedJson(json, preferSelectSym) {
+        state.raw = json;
+        state.tickers = json.tickers || {};
+        state.benchmarks = json._industryBenchmark || {};
+        state.benchIsPercent = detectBenchmarkScales(state.benchmarks);
+        state.normalizedCache = Object.create(null);
+
+        var syms = Object.keys(state.tickers).sort();
+        state.searchIndex = syms.map(function (sym) {
+          var tk = state.tickers[sym] || {};
+          return { sym: sym, symLower: sym.toLowerCase(), name: tk.shortName || "", nameLower: (tk.shortName || "").toLowerCase() };
+        });
+
+        $("updatedLabel").textContent = json.updated ? "Updated: " + json.updated : "Loaded";
+
+        if (preferSelectSym && state.tickers[preferSelectSym]) {
+          if (state.selected.indexOf(preferSelectSym) === -1) {
+            state.selected = state.selected.length >= 3
+              ? [state.selected[0], state.selected[1], preferSelectSym]
+              : state.selected.concat([preferSelectSym]);
+            storageSet("sdd_selected", state.selected);
+          }
+        } else if (state.selected.length === 0) {
+          var saved = storageGet("sdd_selected", []).filter(function (s) { return Boolean(state.tickers[s]); });
+          state.selected = saved.length ? saved.slice(0, 3) : syms.slice(0, 2);
+        } else {
+          state.selected = state.selected.filter(function (s) { return Boolean(state.tickers[s]); });
+          if (!state.selected.length && syms.length) state.selected = syms.slice(0, 2);
+        }
+
+        $("statusBanner").style.display = "none";
+        $("appContent").style.display = "block";
+        renderAll();
+      }
+
+      async function loadMainData(forceApi, preferSelectSym) {
+        var mySeq = ++state.loadSeq;
+        $("statusBanner").style.display = "block";
+        $("statusBanner").textContent = "Loading stock database...";
+        try {
+          var json;
+          if (forceApi && state.ghToken && state.ghOwner && state.ghRepo) {
+            var apiUrl = "https://api.github.com/repos/" + encodeURIComponent(state.ghOwner) + "/" + encodeURIComponent(state.ghRepo) + "/contents/data/data.json?t=" + Date.now();
+            var resApi = await fetch(apiUrl, {
+              headers: { Authorization: "Bearer " + state.ghToken, Accept: "application/vnd.github.raw" }
+            });
+            if (!resApi.ok) throw new Error("GitHub API HTTP " + resApi.status);
+            json = await resApi.json();
+          } else {
+            var url = forceApi ? "data/data.json?t=" + Date.now() : "data/data.json";
+            var res = await fetch(url);
+            if (!res.ok) throw new Error("HTTP " + res.status);
+            json = await res.json();
+          }
+
+          if (mySeq !== state.loadSeq) return;
+          applyLoadedJson(json, preferSelectSym || null);
+        } catch (err) {
+          if (mySeq !== state.loadSeq) return;
+          $("updatedLabel").textContent = "Load failed";
+          $("statusBanner").style.color = "#f87171";
+          $("statusBanner").textContent = "Could not load data/data.json (" + err.message + "). Make sure Phase 2 finished with a green checkmark, then click Reload Page Data.";
+        }
+      }
+
+      function showNotice(msg, isError) {
+        var el = $("actionNotice");
+        if (!msg) { el.style.display = "none"; return; }
+        el.style.display = "block";
+        el.style.borderColor = isError ? "var(--red)" : "var(--accent)";
+        el.style.color = isError ? "var(--red)" : "var(--text)";
+        el.textContent = msg;
+      }
+
+      function toBase64Utf8(str) {
+        var bytes = new TextEncoder().encode(str);
+        var bin = "";
+        for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+        return btoa(bin);
+      }
+
+      function fromBase64Utf8(b64) {
+        var bin = atob(b64.replace(/\n/g, ""));
+        var bytes = new Uint8Array(bin.length);
+        for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+        return new TextDecoder().decode(bytes);
+      }
+
+      async function pollWorkflowCompletion(targetSym) {
+        var runsUrl = "https://api.github.com/repos/" + encodeURIComponent(state.ghOwner) + "/" + encodeURIComponent(state.ghRepo) + "/actions/runs?per_page=3";
+        var headers = { Authorization: "Bearer " + state.ghToken, Accept: "application/vnd.github+json" };
+
+        await new Promise(function (r) { setTimeout(r, 3500); });
+        for (var attempt = 0; attempt < 26; attempt++) {
+          try {
+            var res = await fetch(runsUrl + "&t=" + Date.now(), { headers: headers });
+            if (res.ok) {
+              var data = await res.json();
+              var latest = (data.workflow_runs || [])[0];
+              if (latest) {
+                if (latest.status === "completed") {
+                  if (latest.conclusion === "success") {
+                    showNotice("Data updated! Loading fresh stock data...");
+                    await loadMainData(true, targetSym);
+                    showNotice(targetSym ? (targetSym + " is ready!") : "All stocks refreshed!");
+                    setTimeout(function () { showNotice(""); }, 4000);
+                    return;
+                  } else {
+                    showNotice("GitHub Actions finished with status: " + latest.conclusion + ". Check Actions tab.", true);
+                    return;
+                  }
+                }
+                showNotice("GitHub Actions is fetching Yahoo Finance data (" + latest.status + ")... ~" + Math.max(10, 45 - attempt * 4) + "s");
+              }
+            }
+          } catch (e) {}
+          await new Promise(function (r) { setTimeout(r, 4000); });
+        }
+        showNotice("Workflow is taking longer than usual—click Reload Page Data in ~30 seconds.");
+      }
+
+      async function addNewTickerToRepo(rawSym) {
+        var sym = rawSym.trim().toUpperCase().replace(/[^A-Z0-9.-]/g, "");
+        if (!sym) return;
+
+        if (state.tickers[sym]) {
+          addSelectedTicker(sym);
+          $("newTickerInput").value = "";
+          showNotice(sym + " was already in your watchlist—added to view.");
+          setTimeout(function () { showNotice(""); }, 3000);
+          return;
+        }
+
+        if (!state.ghToken || !state.ghOwner || !state.ghRepo) {
+          $("tokenPanel").classList.add("open");
+          showNotice("Please paste and save your GitHub Token first to add new tickers from this page.", true);
+          return;
+        }
+
+        $("addNewTickerBtn").disabled = true;
+        showNotice("Adding " + sym + " to tickers.txt on GitHub...");
+
+        try {
+          var fileUrl = "https://api.github.com/repos/" + encodeURIComponent(state.ghOwner) + "/" + encodeURIComponent(state.ghRepo) + "/contents/tickers.txt";
+          var headers = {
+            Authorization: "Bearer " + state.ghToken,
+            Accept: "application/vnd.github+json",
+            "Content-Type": "application/json"
+          };
+
+          var getRes = await fetch(fileUrl + "?t=" + Date.now(), { headers: headers });
+          if (!getRes.ok) throw new Error("Could not read tickers.txt (HTTP " + getRes.status + ")");
+          var fileMeta = await getRes.json();
+          var currentText = fromBase64Utf8(fileMeta.content || "");
+          var lines = currentText.split(/\r?\n/);
+          var exists = lines.some(function (l) { return l.split("#")[0].trim().toUpperCase() === sym; });
+          var updatedText = exists ? currentText : (currentText.replace(/\s*$/, "") + "\n" + sym + "\n");
+
+          var putRes = await fetch(fileUrl, {
+            method: "PUT",
+            headers: headers,
+            body: JSON.stringify({
+              message: "Add " + sym + " via Deep Dive web app",
+              content: toBase64Utf8(updatedText),
+              sha: fileMeta.sha
+            })
+          });
+          if (!putRes.ok) throw new Error("Could not update tickers.txt (HTTP " + putRes.status + ")");
+
+          $("newTickerInput").value = "";
+          showNotice(sym + " added to tickers.txt! Waiting for Python fetcher to finish (~45 seconds)...");
+          await pollWorkflowCompletion(sym);
+        } catch (err) {
+          showNotice("Error adding ticker: " + err.message, true);
+        } finally {
+          $("addNewTickerBtn").disabled = false;
+        }
+      }
+
+      async function triggerManualRefreshWorkflow() {
+        if (!state.ghToken || !state.ghOwner || !state.ghRepo) {
+          $("tokenPanel").classList.add("open");
+          showNotice("Paste and save your GitHub Token first to trigger a remote refresh from this button.", true);
+          return;
+        }
+        $("triggerRunBtn").disabled = true;
+        showNotice("Triggering Python data refresh on GitHub Actions...");
+        try {
+          var url = "https://api.github.com/repos/" + encodeURIComponent(state.ghOwner) + "/" + encodeURIComponent(state.ghRepo) + "/actions/workflows/update_data.yml/dispatches";
+          var res = await fetch(url, {
+            method: "POST",
+            headers: {
+              Authorization: "Bearer " + state.ghToken,
+              Accept: "application/vnd.github+json",
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ ref: "main" })
+          });
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          await pollWorkflowCompletion(null);
+        } catch (err) {
+          showNotice("Could not start refresh workflow: " + err.message, true);
+        } finally {
+          $("triggerRunBtn").disabled = false;
+        }
+      }
+
+      function updateTokenUi() {
+        $("ghTokenInput").value = state.ghToken;
+        $("ghOwnerInput").value = state.ghOwner;
+        $("ghRepoInput").value = state.ghRepo;
+        $("tokenStatusDot").style.background = state.ghToken ? "var(--green)" : "var(--accent)";
+      }
+
+      function setSelected(list) {
+        state.selected = list.slice(0, 3);
+        storageSet("sdd_selected", state.selected);
+        renderAll();
+      }
+
+      function addSelectedTicker(sym) {
+        if (!state.tickers[sym] || state.selected.indexOf(sym) !== -1 || state.selected.length >= 3) return;
+        setSelected(state.selected.concat([sym]));
+      }
+
+      function removeSelectedTicker(sym) {
+        if (state.selected.length <= 1) return;
+        setSelected(state.selected.filter(function (s) { return s !== sym; }));
+      }
+
+      function renderPicker(stocks) {
+        $("selectedPills").innerHTML = stocks.map(function (st, idx) {
+          var rm = stocks.length > 1 ? '<button type="button" data-rm="' + esc(st.sym) + '" title="Remove ' + esc(st.sym) + '">&times;</button>' : "";
+          var indSpan = st.industry ? '<span class="pill-ind">' + esc(st.industry) + '</span>' : "";
+          return '<span class="pill">' +
+            '<span class="dot" style="background:' + COLORS[idx] + '"></span>' +
+            '<span>' + esc(st.sym) + '</span>' +
+            '<span class="pill-price">' + fmtMoney(st.currentPrice) + '</span>' +
+            indSpan +
+            '<a class="pill-link" href="https://www.google.com/finance/?q=' + encodeURIComponent(st.sym) + '" target="_blank" rel="noopener noreferrer">GF &#8599;</a>' +
+            rm +
+          '</span>';
+        }).join("");
+        $("addBox").style.display = stocks.length >= 3 ? "none" : "flex";
+      }
+
+      function formatChartVal(metric, val) {
+        if (metric === "eps") return fmtMoney(val, 2);
+        if (metric === "pe") return fmtNum(val, "x", 1);
+        return fmtMoney(val, 1);
+      }
+
+      function renderFinancials(stocks) {
+        var metric = state.finMetric;
+        var chartSeries = stocks.map(function (st, idx) {
+          var hist = [];
+          var fwdVal = null;
+          if (metric === "revenue") { hist = st.series.revenue; fwdVal = st.fwdRevenue; }
+          else if (metric === "earnings") { hist = st.series.earnings; fwdVal = st.fwdEarnings; }
+          else if (metric === "eps") { hist = st.series.eps; fwdVal = st.fwdEps; }
+          else if (metric === "pe") {
+            if (st.trailPE !== null) hist = [{ year: "Trailing P/E", value: st.trailPE }];
+            fwdVal = st.fwdPE;
+          } else {
+            hist = st.series.fcf;
+          }
+          return { sym: st.sym, color: COLORS[idx], hist: hist, fwdVal: fwdVal };
+        });
+
+        var fwdLegendLbl = metric === "pe" ? "Dashed bars = Future P/E" : "Dashed bars = Forward Est.";
+        $("finLegend").innerHTML = chartSeries.map(function (s) {
+          return '<span class="legend-item"><span class="dot" style="background:' + s.color + '"></span><strong style="color:#fff">' + esc(s.sym) + '</strong></span>';
+        }).join("") + '<span class="legend-item" style="margin-left:auto">' + fwdLegendLbl + '</span>';
+
+        var colSet = new Set();
+        chartSeries.forEach(function (s) { s.hist.forEach(function (p) { colSet.add(p.year); }); });
+        var columns = Array.from(colSet).sort();
+        var fwdColLabel = metric === "pe" ? "Future P/E" : "Forward Est.";
+        if (chartSeries.some(function (s) { return s.fwdVal !== null; })) columns.push(fwdColLabel);
+
+        if (!columns.length) {
+          $("finChartWrap").innerHTML = '<div class="status-banner">No statement data available for this metric.</div>';
+        } else {
+          var W = 980, H = 300, padL = 74, padR = 24, padT = 24, padB = 34;
+          var innerW = W - padL - padR, innerH = H - padT - padB;
+          var minY = 0, maxY = 0;
+
+          chartSeries.forEach(function (s) {
+            s.hist.forEach(function (p) { if (p.value < minY) minY = p.value; if (p.value > maxY) maxY = p.value; });
+            if (s.fwdVal !== null) { if (s.fwdVal < minY) minY = s.fwdVal; if (s.fwdVal > maxY) maxY = s.fwdVal; }
+          });
+          if (minY === maxY) maxY = minY + 10;
+          maxY += (maxY - minY) * 0.12;
+          if (minY < 0) minY -= (maxY - minY) * 0.08;
+
+          function yOf(v) { return padT + (1 - (v - minY) / (maxY - minY)) * innerH; }
+          var zeroY = Math.max(padT, Math.min(H - padB, yOf(0)));
+
+          var gridSvg = "";
+          for (var g = 0; g <= 4; g++) {
+            var val = minY + ((maxY - minY) * g) / 4;
+            var y = yOf(val);
+            gridSvg += '<line x1="' + padL + '" y1="' + y + '" x2="' + (W - padR) + '" y2="' + y + '" stroke="#4a3628" stroke-dasharray="3,4"/>';
+            gridSvg += '<text x="' + (padL - 10) + '" y="' + (y + 4) + '" text-anchor="end" fill="#bda899" font-size="11">' + formatChartVal(metric, val) + '</text>';
+          }
+          gridSvg += '<line x1="' + padL + '" y1="' + zeroY + '" x2="' + (W - padR) + '" y2="' + zeroY + '" stroke="#bda899" stroke-opacity="0.5"/>';
+
+          var groupW = innerW / columns.length;
+          var barW = Math.min(44, (groupW * 0.72) / chartSeries.length);
+          var showDirectLabels = barW >= 32 && (columns.length * chartSeries.length) <= 10;
+          var barsSvg = "";
+
+          columns.forEach(function (lbl, gIdx) {
+            var groupCenter = padL + groupW * (gIdx + 0.5);
+            var totalBarsW = barW * chartSeries.length + (chartSeries.length - 1) * 5;
+            var startX = groupCenter - totalBarsW / 2;
+            var isFwd = lbl === fwdColLabel;
+
+            gridSvg += '<text x="' + groupCenter + '" y="' + (H - 10) + '" text-anchor="middle" fill="' + (isFwd ? "#d97706" : "#bda899") + '" font-weight="' + (isFwd ? "700" : "400") + '" font-size="12">' + esc(lbl) + '</text>';
+
+            chartSeries.forEach(function (s, sIdx) {
+              var val = isFwd ? s.fwdVal : null;
+              if (!isFwd) {
+                var found = s.hist.find(function (p) { return p.year === lbl; });
+                if (found) val = found.value;
+              }
+              if (val === null) return;
+
+              var x = startX + sIdx * (barW + 5);
+              var yVal = yOf(val);
+              var barY = Math.min(yVal, zeroY);
+              var barH = Math.max(2, Math.abs(zeroY - yVal));
+              var fmtVal = formatChartVal(metric, val);
+              var tipAttr = 'data-bar-title="' + esc(s.sym + " — " + lbl) + '" data-bar-val="' + esc(fmtVal) + '"';
+
+              barsSvg += isFwd
+                ? '<rect class="bar-hover" ' + tipAttr + ' x="' + x + '" y="' + barY + '" width="' + barW + '" height="' + barH + '" rx="3" fill="' + s.color + '" fill-opacity="0.35" stroke="' + s.color + '" stroke-width="2" stroke-dasharray="4,2"/>'
+                : '<rect class="bar-hover" ' + tipAttr + ' x="' + x + '" y="' + barY + '" width="' + barW + '" height="' + barH + '" rx="3" fill="' + s.color + '"/>';
+
+              if (showDirectLabels) {
+                var txtY = val >= 0 ? Math.max(12, barY - 5) : Math.min(H - padB - 2, barY + barH + 12);
+                barsSvg += '<text x="' + (x + barW / 2) + '" y="' + txtY + '" text-anchor="middle" fill="#f7efe8" font-size="10">' + fmtVal + '</text>';
+              }
+            });
+          });
+
+          $("finChartWrap").innerHTML = '<svg viewBox="0 0 ' + W + ' ' + H + '">' + gridSvg + barsSvg + '</svg>';
+        }
+
+        renderMultiYearTable(stocks);
+        renderEarningsHistory(stocks);
+      }
+
+      function renderMultiYearTable(stocks) {
+        var yearSet = new Set();
+        stocks.forEach(function (st) {
+          ["revenue", "earnings", "eps", "fcf"].forEach(function (k) {
+            st.series[k].forEach(function (p) { if (p.year !== "TTM") yearSet.add(p.year); });
+          });
+        });
+        var years = Array.from(yearSet).sort();
+
+        var rows = [];
+        stocks.forEach(function (st, sIdx) {
+          var metricRows = [
+            { key: "revenue", label: "Revenue (" + st.fwdRevLabel + ")", series: st.series.revenue, cagr: st.cagr.revenue, actualNow: st.totalRevenue, fwd: st.fwdRevenue, fmt: function (v) { return fmtMoney(v, 1); }, lowerIsBetter: false },
+            { key: "earnings", label: "Earnings", series: st.series.earnings, cagr: st.cagr.earnings, actualNow: st.netIncomeToCommon, fwd: st.fwdEarnings, fmt: function (v) { return fmtMoney(v, 1); }, lowerIsBetter: false },
+            { key: "eps", label: "EPS", series: st.series.eps, cagr: st.cagr.eps, actualNow: st.trailEps, fwd: st.fwdEps, fmt: function (v) { return fmtMoney(v, 2); }, lowerIsBetter: false },
+            { key: "forwardPE", label: "P/E (Trail → Future)", series: [], cagr: null, actualNow: st.trailPE, fwd: st.fwdPE, fmt: function (v) { return fmtNum(v, "x", 1); }, lowerIsBetter: true },
+            { key: "fcf", label: "Free Cash Flow", series: st.series.fcf, cagr: st.cagr.fcf, actualNow: st.freeCashflow, fwd: null, fmt: function (v) { return fmtMoney(v, 1); }, lowerIsBetter: false }
+          ];
+
+          metricRows.forEach(function (mr, rIdx) {
+            var yrCells = years.map(function (yr) {
+              var found = mr.series.find(function (p) { return p.year === yr; });
+              return "<td>" + (found ? mr.fmt(found.value) : "—") + "</td>";
+            }).join("");
+
+            var baseActual = mr.actualNow !== null ? mr.actualNow : (mr.series.length ? mr.series[mr.series.length - 1].value : null);
+            var diffPct = null;
+            if (baseActual !== null && mr.fwd !== null && Math.abs(baseActual) > 0.0001) {
+              diffPct = ((mr.fwd - baseActual) / Math.abs(baseActual)) * 100;
+            }
+            var diffCls = diffPct === null ? "" : ((mr.lowerIsBetter ? diffPct < 0 : diffPct > 0) ? "pos" : "neg");
+            var rowClass = rIdx === 0 && sIdx > 0 ? "row-group-start" : "";
+            var tickerCell = rIdx === 0
+              ? '<td rowspan="' + metricRows.length + '" style="vertical-align:top;font-weight:800;color:#fff;"><span class="dot" style="background:' + COLORS[sIdx] + ';margin-right:6px;"></span>' + esc(st.sym) + '</td>'
+              : "";
+
+            rows.push('<tr class="' + rowClass + '">' +
+              tickerCell +
+              '<td>' + tipHtml(mr.key, mr.label) + '</td>' +
+              yrCells +
+              '<td>' + mr.fmt(baseActual) + '</td>' +
+              '<td class="' + (mr.cagr === null ? "" : (mr.cagr >= 0 ? "pos" : "neg")) + '">' + (mr.cagr !== null ? (mr.cagr >= 0 ? "+" : "") + (mr.cagr * 100).toFixed(1) + "%/yr" : "—") + '</td>' +
+              '<td class="amb">' + (mr.fwd !== null ? mr.fmt(mr.fwd) : "—") + '</td>' +
+              '<td class="' + diffCls + '">' + (diffPct !== null ? (diffPct >= 0 ? "+" : "") + diffPct.toFixed(1) + "%" : "—") + '</td>' +
+            '</tr>');
+          });
+        });
+
+        $("multiYearTableWrap").innerHTML = '<div class="table-wrap"><table><thead><tr>' +
+          '<th>Ticker</th><th>Metric</th>' +
+          years.map(function (y) { return '<th>' + esc(y) + '</th>'; }).join("") +
+          '<th>' + tipHtml("latestActual", "Current / TTM") + '</th>' +
+          '<th>' + tipHtml("cagr", "Hist. CAGR") + '</th>' +
+          '<th>' + tipHtml("fwdEst", "Forward Est.") + '</th>' +
+          '<th>' + tipHtml("fwdChange", "Est. vs. Actual") + '</th>' +
+          '</tr></thead><tbody>' + rows.join("") + '</tbody></table></div>';
+      }
+
+      function renderEarningsHistory(stocks) {
+        var rows = [];
+        stocks.forEach(function (st, idx) {
+          st.earningsHistory.forEach(function (q, qIdx) {
+            var surp = num(q.surprisePct);
+            var cls = surp === null ? "" : (surp >= 0 ? "pos" : "neg");
+            rows.push('<tr class="' + (qIdx === 0 && idx > 0 ? "row-group-start" : "") + '">' +
+              '<td><span class="dot" style="background:' + COLORS[idx] + ';margin-right:6px;"></span><strong style="color:#fff">' + esc(st.sym) + '</strong></td>' +
+              '<td>' + esc(q.quarter) + '</td>' +
+              '<td>' + fmtMoney(q.epsEstimate, 2) + '</td>' +
+              '<td>' + fmtMoney(q.epsActual, 2) + '</td>' +
+              '<td class="' + cls + '">' + (surp !== null ? (surp >= 0 ? "+" : "") + surp.toFixed(1) + "%" : "—") + '</td>' +
+            '</tr>');
+          });
+        });
+
+        $("earningsHistoryWrap").innerHTML = rows.length
+          ? '<div class="table-wrap"><table><thead><tr><th>Ticker</th><th>Quarter</th><th>Estimated EPS</th><th>Actual EPS</th><th>Beat / Miss %</th></tr></thead><tbody>' + rows.join("") + '</tbody></table></div>'
+          : '<div class="status-banner" style="margin-bottom:0;">No quarterly EPS surprise history returned for selected ticker(s).</div>';
+      }
+
+      function renderBenchmarks(stocks) {
+        var primary = stocks[0];
+        var bName = primary ? primary.benchmarkIndustry : null;
+        var bData = (bName && state.benchmarks[bName]) ? state.benchmarks[bName] : null;
+        $("benchSub").textContent = (bName && bData)
+          ? "Benchmark Industry: " + bName + " (White marker = Industry Avg)"
+          : "Side-by-side comparison (No NYU Stern match for primary stock)";
+
+        $("benchLegend").innerHTML = stocks.map(function (st, idx) {
+          return '<span class="legend-item"><span class="dot" style="background:' + COLORS[idx] + '"></span><strong style="color:#fff">' + esc(st.sym) + '</strong></span>';
+        }).join("");
+
+        var metrics = [
+          { key: "trailingPE", label: "Trailing P/E", get: function (st) { return st.trailPE; }, bKey: "trailingPE", fmt: function (v) { return fmtNum(v, "x", 1); }, type: "raw" },
+          { key: "forwardPE", label: "Forward P/E", get: function (st) { return st.fwdPE; }, bKey: "forwardPE", fmt: function (v) { return fmtNum(v, "x", 1); }, type: "raw" },
+          { key: "priceToBook", label: "Price / Book", get: function (st) { return st.priceToBook; }, bKey: "priceToBook", fmt: function (v) { return fmtNum(v, "x", 1); }, type: "raw" },
+          { key: "fcfYield", label: "Free Cash Flow Yield", get: function (st) { return st.fcfYieldPct; }, bKey: null, fmt: function (v) { return fmtPctNum(v, 1); }, type: "pct" },
+          { key: "operatingMargins", label: "Operating Margin", get: function (st) { return st.opMarginPct; }, bKey: "operatingMargin", fmt: function (v) { return fmtPctNum(v, 1); }, type: "pct" },
+          { key: "roic", label: "ROIC (Invested Capital)", get: function (st) { return st.roicPct; }, bKey: "roic", fmt: function (v) { return fmtPctNum(v, 1); }, type: "pct" },
+          { key: "roe", label: "Return on Equity (ROE)", get: function (st) { return st.roePct; }, bKey: "roe", fmt: function (v) { return fmtPctNum(v, 1); }, type: "pct" },
+          { key: "roa", label: "Return on Assets (ROA)", get: function (st) { return st.roaPct; }, bKey: null, fmt: function (v) { return fmtPctNum(v, 1); }, type: "pct" },
+          { key: "debtToEquity", label: "Debt / Equity", get: function (st) { return st.debtToEquityRatio; }, bKey: "debtToEquity", fmt: function (v) { return fmtNum(v, "x", 2); }, type: "de" }
+        ];
+
+        $("benchWrap").innerHTML = metrics.map(function (m) {
+          var bRaw = (bData && m.bKey) ? pickBenchVal(bData, m.bKey, m.type) : null;
+          var vals = stocks.map(function (st, idx) { return { sym: st.sym, color: COLORS[idx], val: m.get(st) }; });
+          var allAbs = vals.map(function (x) { return x.val; }).concat([bRaw]).filter(function (x) { return x !== null; }).map(Math.abs);
+          var maxScale = allAbs.length ? Math.max.apply(null, allAbs.concat([0.01])) * 1.15 : 10;
+
+          var bars = vals.map(function (v) {
+            var isNeg = v.val !== null && v.val < 0;
+            var w = v.val !== null ? Math.min(100, (Math.abs(v.val) / maxScale) * 100) : 0;
+            var fillColor = isNeg ? "var(--red)" : v.color;
+            var markX = (bRaw !== null && bRaw > 0) ? Math.min(98, (bRaw / maxScale) * 100) : null;
+            var markHtml = markX !== null ? '<div title="Industry Avg: ' + m.fmt(bRaw) + '" style="position:absolute;left:' + markX + '%;top:0;bottom:0;width:2px;background:#f7efe8;"></div>' : "";
+            return '<div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">' +
+              '<span style="width:52px;font-size:0.78rem;color:#fff;font-weight:700;">' + esc(v.sym) + '</span>' +
+              '<div class="bar-track" style="flex:1;"><div class="bar-fill" style="width:' + w + '%;background:' + fillColor + ';opacity:' + (isNeg ? 0.75 : 1) + ';"></div>' + markHtml + '</div>' +
+              '<span style="width:62px;text-align:right;font-size:0.78rem;color:' + (isNeg ? "var(--red)" : "var(--text)") + ';">' + m.fmt(v.val) + '</span>' +
+            '</div>';
+          }).join("");
+
+          return '<div class="bench-row"><div class="bench-label"><strong>' + tipHtml(m.key, m.label) + '</strong><span>' + (bRaw !== null ? "Ind Avg: " + m.fmt(bRaw) : "Ind Avg: —") + '</span></div>' + bars + '</div>';
+        }).join("");
+      }
+
+      function renderHealth(stocks) {
+        $("healthWrap").innerHTML = stocks.map(function (st, idx) {
+          var cash = st.totalCash || 0;
+          var debt = st.totalDebt || 0;
+          var maxCD = Math.max(cash, debt, 1);
+
+          var qr = st.quickRatio;
+          var qrPct = qr !== null ? Math.min(100, (qr / 2.5) * 100) : 0;
+          var qrColor = qr === null ? "var(--muted)" : (qr >= 1 ? "var(--green)" : "var(--accent)");
+
+          var de = st.debtToEbitda;
+          var dePct = de !== null ? Math.min(100, (de / 5) * 100) : 0;
+          var deColor = de === null ? "var(--muted)" : (de <= 2.5 ? "var(--green)" : (de <= 4 ? "var(--accent)" : "var(--red)"));
+
+          var ic = st.interestCoverage;
+          var icPct = ic !== null ? Math.max(0, Math.min(100, (ic / 15) * 100)) : 0;
+          var icColor = ic === null ? "var(--muted)" : (ic >= 5 ? "var(--green)" : (ic >= 2 ? "var(--accent)" : "var(--red)"));
+
+          var pm = st.profitMarginPct;
+          var pmPct = pm !== null ? Math.max(0, Math.min(100, (pm / 40) * 100)) : 0;
+
+          var po = st.payoutRatioPct;
+          var poPct = po !== null ? Math.max(0, Math.min(100, po)) : 0;
+          var poColor = po === null ? "var(--muted)" : (po <= 60 ? "var(--green)" : (po <= 85 ? "var(--accent)" : "var(--red)"));
+
+          var netPosCls = (st.netCash !== null ? st.netCash : 0) >= 0 ? "pos" : "neg";
+
+          return '<div class="health-card">' +
+            '<h4><span class="dot" style="background:' + COLORS[idx] + '"></span>' + esc(st.sym) + '</h4>' +
+            '<div class="meter-row"><div class="meter-top"><span>' + tipHtml("totalCash", "Total Cash") + '</span><span class="pos">' + fmtMoney(st.totalCash) + '</span></div><div class="bar-track"><div class="bar-fill" style="width:' + ((cash / maxCD) * 100) + '%;background:var(--green);"></div></div></div>' +
+            '<div class="meter-row"><div class="meter-top"><span>' + tipHtml("totalDebt", "Total Debt") + '</span><span class="neg">' + fmtMoney(st.totalDebt) + '</span></div><div class="bar-track"><div class="bar-fill" style="width:' + ((debt / maxCD) * 100) + '%;background:var(--red);"></div></div></div>' +
+            '<div class="meter-row" style="padding:6px 8px;background:var(--surface);border-radius:7px;"><div class="meter-top" style="margin:0;"><span>' + tipHtml("netCash", "Net Cash Position") + '</span><span class="' + netPosCls + '">' + fmtMoney(st.netCash) + '</span></div></div>' +
+            '<div class="meter-row"><div class="meter-top"><span>' + tipHtml("quickRatio", "Quick Ratio") + '</span><span style="color:' + qrColor + ';font-weight:700;">' + fmtNum(qr, "x", 2) + '</span></div><div class="bar-track"><div class="bar-fill" style="width:' + qrPct + '%;background:' + qrColor + ';"></div><div style="position:absolute;left:40%;top:0;bottom:0;width:2px;background:#f7efe8;opacity:0.7;"></div></div></div>' +
+            '<div class="meter-row"><div class="meter-top"><span>' + tipHtml("debtToEbitda", "Debt / EBITDA") + '</span><span style="color:' + deColor + ';font-weight:700;">' + fmtNum(de, "x", 2) + '</span></div><div class="bar-track"><div class="bar-fill" style="width:' + dePct + '%;background:' + deColor + ';"></div></div></div>' +
+            '<div class="meter-row"><div class="meter-top"><span>' + tipHtml("interestCoverage", "Interest Coverage") + '</span><span style="color:' + icColor + ';font-weight:700;">' + fmtNum(ic, "x", 1) + '</span></div><div class="bar-track"><div class="bar-fill" style="width:' + icPct + '%;background:' + icColor + ';"></div></div></div>' +
+            '<div class="meter-row"><div class="meter-top"><span>' + tipHtml("profitMargins", "Net Profit Margin") + '</span><span class="amb">' + fmtPctNum(pm, 1) + '</span></div><div class="bar-track"><div class="bar-fill" style="width:' + pmPct + '%;background:var(--accent);"></div></div></div>' +
+            '<div class="meter-row" style="margin-bottom:0;"><div class="meter-top"><span>' + tipHtml("divYield", "Div Yield") + ': <strong>' + fmtPctNum(st.divYieldPct, 2) + '</strong></span><span>' + tipHtml("payoutRatio", "Payout") + ': <strong style="color:' + poColor + '">' + fmtPctNum(po, 1) + '</strong></span></div><div class="bar-track"><div class="bar-fill" style="width:' + poPct + '%;background:' + poColor + ';"></div></div></div>' +
+          '</div>';
+        }).join("");
+      }
+
+      function renderAll() {
+        var stocks = state.selected.map(getNormalizedStock);
+        renderPicker(stocks);
+        renderFinancials(stocks);
+        renderBenchmarks(stocks);
+        renderHealth(stocks);
+      }
+
+      var tipBox = $("floatingTip");
+      function positionTip(el) {
+        var rect = el.getBoundingClientRect();
+        var tipRect = tipBox.getBoundingClientRect();
+        var left = rect.left;
+        if (left + tipRect.width > window.innerWidth - 12) left = window.innerWidth - tipRect.width - 12;
+        if (left < 12) left = 12;
+        var top = rect.bottom + 8;
+        if (top + tipRect.height > window.innerHeight - 12) top = Math.max(12, rect.top - tipRect.height - 8);
+        tipBox.style.left = left + "px";
+        tipBox.style.top = top + "px";
+      }
+
+      function showTipForElement(el) {
+        var metricKey = el.getAttribute("data-metric");
+        if (metricKey && METRIC_INFO[metricKey]) {
+          var info = METRIC_INFO[metricKey];
+          tipBox.innerHTML = '<span class="tip-title">' + esc(info.title) + '</span>' + esc(info.desc) + '<br><span class="tip-dir ' + info.cls + '">' + esc(info.dir) + '</span>';
+          tipBox.style.display = "block";
+          positionTip(el);
+          return true;
+        }
+        var barTitle = el.getAttribute("data-bar-title");
+        if (barTitle) {
+          tipBox.innerHTML = '<span class="tip-title">' + esc(barTitle) + '</span><strong style="color:var(--accent);font-size:0.95rem;">' + esc(el.getAttribute("data-bar-val")) + '</strong>';
+          tipBox.style.display = "block";
+          positionTip(el);
+          return true;
+        }
+        return false;
+      }
+
+      function renderDropdown(query) {
+        var q = (query || "").trim().toLowerCase();
+        var dd = $("tickerDropdown");
+        var matches = state.searchIndex.filter(function (item) {
+          if (state.selected.indexOf(item.sym) !== -1) return false;
+          return !q || item.symLower.indexOf(q) !== -1 || item.nameLower.indexOf(q) !== -1;
+        }).slice(0, 40);
+
+        if (!matches.length) { dd.classList.remove("open"); return; }
+        dd.innerHTML = matches.map(function (item) {
+          return '<div class="dropdown-item" data-add="' + esc(item.sym) + '"><strong>' + esc(item.sym) + '</strong><span>' + esc(item.name) + '</span></div>';
+        }).join("");
+        dd.classList.add("open");
+      }
+
+      document.addEventListener("pointerover", function (e) {
+        if (e.pointerType === "touch") return;
+        var el = e.target.closest("[data-metric], [data-bar-title]");
+        if (el) showTipForElement(el);
+      });
+      document.addEventListener("pointerout", function (e) {
+        if (e.pointerType === "touch") return;
+        if (e.target.closest("[data-metric], [data-bar-title]")) tipBox.style.display = "none";
+      });
+      document.addEventListener("click", function (e) {
+        var el = e.target.closest("[data-metric], [data-bar-title]");
+        if (el) showTipForElement(el);
+        else tipBox.style.display = "none";
+      });
+
+      $("tickerSearch").addEventListener("focus", function (e) { renderDropdown(e.target.value); });
+      $("tickerSearch").addEventListener("input", function (e) { renderDropdown(e.target.value); });
+      document.addEventListener("click", function (e) { if (!e.target.closest("#addBox")) $("tickerDropdown").classList.remove("open"); });
+
+      $("tickerDropdown").addEventListener("click", function (e) {
+        var item = e.target.closest("[data-add]");
+        if (!item) return;
+        addSelectedTicker(item.getAttribute("data-add"));
+        $("tickerSearch").value = "";
+        $("tickerDropdown").classList.remove("open");
+      });
+
+      $("selectedPills").addEventListener("click", function (e) {
+        var btn = e.target.closest("[data-rm]");
+        if (btn) removeSelectedTicker(btn.getAttribute("data-rm"));
+      });
+
+      $("finMetricBtns").addEventListener("click", function (e) {
+        var btn = e.target.closest("[data-fin]");
+        if (!btn) return;
+        var all = $("finMetricBtns").querySelectorAll(".btn");
+        for (var i = 0; i < all.length; i++) all[i].classList.remove("active");
+        btn.classList.add("active");
+        state.finMetric = btn.getAttribute("data-fin");
+        renderFinancials(state.selected.map(getNormalizedStock));
+      });
+
+      $("tokenToggleBtn").addEventListener("click", function () { $("tokenPanel").classList.toggle("open"); });
+      $("saveTokenBtn").addEventListener("click", function () {
+        state.ghToken = $("ghTokenInput").value.trim();
+        state.ghOwner = $("ghOwnerInput").value.trim();
+        state.ghRepo = $("ghRepoInput").value.trim();
+        storageSet("sdd_gh_token", state.ghToken);
+        storageSet("sdd_gh_owner", state.ghOwner);
+        storageSet("sdd_gh_repo", state.ghRepo);
+        updateTokenUi();
+        $("tokenPanel").classList.remove("open");
+        showNotice(state.ghToken ? "GitHub Token saved in this browser!" : "Token cleared.");
+        setTimeout(function () { showNotice(""); }, 3000);
+      });
+      $("clearTokenBtn").addEventListener("click", function () {
+        state.ghToken = "";
+        storageSet("sdd_gh_token", "");
+        updateTokenUi();
+      });
+
+      $("addNewTickerBtn").addEventListener("click", function () { addNewTickerToRepo($("newTickerInput").value); });
+      $("newTickerInput").addEventListener("keydown", function (e) {
+        if (e.key === "Enter") addNewTickerToRepo($("newTickerInput").value);
+      });
+      $("triggerRunBtn").addEventListener("click", triggerManualRefreshWorkflow);
+      $("refreshBtn").addEventListener("click", function () { loadMainData(true, null); });
+
+      updateTokenUi();
+      loadMainData(false, null);
+    })();
+  </script>
+</body>
+</html>
